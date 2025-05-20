@@ -39,14 +39,19 @@ MainView {
             leadingActionBar.actions: [
                 Action {
                     iconName: "navigation-menu"
-                    onTriggered: root.close()
+                    onTriggered: drawer.open()
                 }
             ]
             trailingActionBar.actions: [
                 Action {
-                    iconName: "settings"
-                    onTriggered: console.log('Settings clicked')
+                iconName: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "weather-clear" : "weather-clear-night"
+                text: theme.name === "Ubuntu.Components.Themes.SuruDark" ? i18n.tr("Light Mode") : i18n.tr("Dark Mode")
+                onTriggered: {
+                Theme.name = theme.name === "Ubuntu.Components.Themes.SuruDark" ? 
+                        "Ubuntu.Components.Themes.Ambiance" : 
+                        "Ubuntu.Components.Themes.SuruDark";
                 }
+            }
             ]
         }
 
