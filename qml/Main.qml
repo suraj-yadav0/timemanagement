@@ -29,8 +29,75 @@ MainView {
     width: units.gu(45)
     height: units.gu(75)
 
+    property bool menuOpen: false
+
+    // Overlay to close menu when clicking outside
+    Rectangle {
+        id: menuOverlay
+        visible: root.menuOpen
+        z: 1
+        color: "black"
+        opacity: 0.3
+        anchors.fill: parent
+        MouseArea {
+            anchors.fill: parent
+            onClicked: root.menuOpen = false
+        }
+    }
+
+    Rectangle {
+        id: sideMenu
+        width: units.gu(30)
+        height: parent.height
+        color: theme.palette.normal.background
+        visible: root.menuOpen
+        z: 2
+
+        Column {
+            anchors.fill: parent
+            spacing: units.gu(2)
+            padding: units.gu(2)
+
+            Label {
+                text: i18n.tr("Menu")
+                font.bold: true
+                anchors.horizontalCenter: parent.horizontalCenter
+            }
+
+            Button {
+                text: i18n.tr("Dashboard")
+                onClicked: root.menuOpen = false
+            }
+            Button {
+                text: i18n.tr("Tasks")
+                onClicked: root.menuOpen = false
+            }
+            Button {
+                text: i18n.tr("Calendar")
+                onClicked: root.menuOpen = false
+            }
+            Button {
+                text: i18n.tr("Pomodoro Timer")
+                onClicked: root.menuOpen = false
+            }
+            Button {
+                text: i18n.tr("Statistics")
+                onClicked: root.menuOpen = false
+            }
+            Button {
+                text: i18n.tr("Settings")
+                onClicked: root.menuOpen = false
+            }
+            Button {
+                text: i18n.tr("About")
+                onClicked: root.menuOpen = false
+            }
+        }
+    }
+
     Page {
         anchors.fill: parent
+        z: 1
 
         header: PageHeader {
             id: header
@@ -39,7 +106,7 @@ MainView {
             leadingActionBar.actions: [
                 Action {
                     iconName: "navigation-menu"
-                    onTriggered: drawer.open()
+                    onTriggered: root.menuOpen = true
                 }
             ]
             trailingActionBar.actions: [
