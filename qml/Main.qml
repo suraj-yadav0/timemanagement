@@ -32,24 +32,21 @@ MainView {
     Page {
         anchors.fill: parent
 
-        
-
         header: PageHeader {
             id: header
             title: i18n.tr('Time Management App')
-            
-            // Add actions to the header
+
             leadingActionBar.actions: [
-            Action {
-                iconName: "navigation-menu"
-                onTriggered: root.close()
-            }
+                Action {
+                    iconName: "navigation-menu"
+                    onTriggered: root.close()
+                }
             ]
             trailingActionBar.actions: [
-            Action {
-                iconName: "settings" 
-                onTriggered: console.log('Settings clicked')
-            }
+                Action {
+                    iconName: "settings"
+                    onTriggered: console.log('Settings clicked')
+                }
             ]
         }
 
