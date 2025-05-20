@@ -1,0 +1,15 @@
+{
+    "name": "timemanagement.surajyadav",
+    "description": "A simple time management app for Ubuntu Touch.",
+    "architecture": "@CLICK_ARCH@",
+    "title": "Time Management App",
+    "hooks": {
+        "timemanagement": {
+            "apparmor": "timemanagement.apparmor",
+            "desktop":  "timemanagement.desktop"
+        }
+    },
+    "version": "1.0.0",
+    "maintainer": "Suraj Yadav <surajyadav200701@gmail.com>",
+    "framework" : "@CLICK_FRAMEWORK@"
+}
