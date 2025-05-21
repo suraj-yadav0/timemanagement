@@ -19,8 +19,7 @@ import Lomiri.Components 1.3
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
-import 'views/components' 
-
+import "views/components"
 
 MainView {
     id: root
@@ -37,8 +36,8 @@ MainView {
     Rectangle {
         id: menuOverlay
         visible: root.menuOpen
-        z: 1
-        color: "black"
+        z: 2
+
         opacity: 0.3
         anchors.fill: parent
         MouseArea {
@@ -62,40 +61,37 @@ MainView {
 
             Label {
                 text: i18n.tr("Menu")
-                color: 'red'
+                font.pixelSize : 20
+                color: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "white" : "black"
                 font.bold: true
                 anchors.horizontalCenter: parent.horizontalCenter
             }
 
+            Seprator {}
 
-          Seprator{}
-
-           Row {
-            anchors.horizontalCenter: parent.horizontalCenter
-            spacing: units.gu(1)
-
-            Icon {
-                id: icon
-                name: "notebook"
-                width: units.gu(2)
-                height: units.gu(2)
-
-            }
-             CustomButton {
+            CustomButton {
                 text: i18n.tr("Tasks")
                 onClicked: root.menuOpen = false
             }
 
+            Seprator {}
+
+            CustomButton{
+                text: i18n.tr("Calendar")
+                name : "calendar"
+                onClicked: root.menuOpen = false
+            }
 
 
+            Seprator {}
 
-           }
-
-                  Seprator{
-
-                  }
+            CustomButton{
+                text: i18n.tr("Projects")
+                name : "note"
+                onClicked: root.menuOpen = false
+            }
             // Button {
-                
+
             //     text: i18n.tr("Tasks")
             //     onClicked: root.menuOpen = false
             // }
@@ -138,19 +134,13 @@ MainView {
             ]
             trailingActionBar.actions: [
                 Action {
-                iconName: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "weather-clear-night" : "weather-clear"
-                text: theme.name === "Ubuntu.Components.Themes.SuruDark" ? i18n.tr("Light Mode") : i18n.tr("Dark Mode")
-                onTriggered: {
-                Theme.name = theme.name === "Ubuntu.Components.Themes.SuruDark" ? 
-                        "Ubuntu.Components.Themes.Ambiance" : 
-                        "Ubuntu.Components.Themes.SuruDark";
+                    iconName: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "weather-clear-night" : "weather-clear"
+                    text: theme.name === "Ubuntu.Components.Themes.SuruDark" ? i18n.tr("Light Mode") : i18n.tr("Dark Mode")
+                    onTriggered: {
+                        Theme.name = theme.name === "Ubuntu.Components.Themes.SuruDark" ? "Ubuntu.Components.Themes.Ambiance" : "Ubuntu.Components.Themes.SuruDark";
+                    }
                 }
-            }
             ]
         }
-
-
-        
-       
     }
 }
