@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-20 08:49+0000\n"
+"POT-Creation-Date: 2025-05-21 05:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,50 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/Main.qml:62
+#: ../qml/Main.qml:64
 msgid "Menu"
 msgstr ""
 
-#: ../qml/Main.qml:68
-msgid "Dashboard"
-msgstr ""
-
-#: ../qml/Main.qml:72
+#: ../qml/Main.qml:83
 msgid "Tasks"
 msgstr ""
 
-#: ../qml/Main.qml:76
-msgid "Calendar"
-msgstr ""
-
-#: ../qml/Main.qml:80
-msgid "Pomodoro Timer"
-msgstr ""
-
-#: ../qml/Main.qml:84
-msgid "Statistics"
-msgstr ""
-
-#: ../qml/Main.qml:88
-msgid "Settings"
-msgstr ""
-
-#: ../qml/Main.qml:92
-msgid "About"
-msgstr ""
-
-#: ../qml/Main.qml:104 timemanagement.desktop.in.h:1
+#: ../qml/Main.qml:129 timemanagement.desktop.in.h:1
 msgid "Time Management App"
 msgstr ""
 
-#: ../qml/Main.qml:115
+#: ../qml/Main.qml:140
 msgid "Dark Mode"
 msgstr ""
 
-#: ../qml/Main.qml:115
+#: ../qml/Main.qml:140
 msgid "Light Mode"
-msgstr ""
-
-#: ../qml/Main.qml:132
-msgid "Hello World!"
 msgstr ""

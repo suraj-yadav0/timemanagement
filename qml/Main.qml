@@ -16,9 +16,11 @@
 
 import QtQuick 2.7
 import Lomiri.Components 1.3
-//import QtQuick.Controls 2.2
+import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
+import 'views/components' 
+
 
 MainView {
     id: root
@@ -55,8 +57,8 @@ MainView {
 
         Column {
             anchors.fill: parent
-            spacing: units.gu(2)
-            padding: units.gu(2)
+            spacing: units.gu(1)
+            padding: units.gu(5)
 
             Label {
                 text: i18n.tr("Menu")
@@ -64,34 +66,57 @@ MainView {
                 anchors.horizontalCenter: parent.horizontalCenter
             }
 
-            Button {
-                text: i18n.tr("Dashboard")
-                onClicked: root.menuOpen = false
-            }
-            Button {
+
+            //            Rectangle {
+            //     id: separator
+            //     width: parent.width / 1.5
+            //     height: units.gu(0.1)
+            //     color: 'black'
+            //     anchors.horizontalCenter: parent.horizontalCenter
+              
+            // }
+
+           Row {
+            anchors.horizontalCenter: parent.horizontalCenter
+            spacing: units.gu(1)
+             CustomButton {
                 text: i18n.tr("Tasks")
                 onClicked: root.menuOpen = false
             }
-            Button {
-                text: i18n.tr("Calendar")
-                onClicked: root.menuOpen = false
-            }
-            Button {
-                text: i18n.tr("Pomodoro Timer")
-                onClicked: root.menuOpen = false
-            }
-            Button {
-                text: i18n.tr("Statistics")
-                onClicked: root.menuOpen = false
-            }
-            Button {
-                text: i18n.tr("Settings")
-                onClicked: root.menuOpen = false
-            }
-            Button {
-                text: i18n.tr("About")
-                onClicked: root.menuOpen = false
-            }
+
+
+
+
+           }
+
+                  Seprator{
+
+                  }
+            // Button {
+                
+            //     text: i18n.tr("Tasks")
+            //     onClicked: root.menuOpen = false
+            // }
+            // Button {
+            //     text: i18n.tr("Calendar")
+            //     onClicked: root.menuOpen = false
+            // }
+            // Button {
+            //     text: i18n.tr("Pomodoro ")
+            //     onClicked: root.menuOpen = false
+            // }
+            // Button {
+            //     text: i18n.tr("Statistics")
+            //     onClicked: root.menuOpen = false
+            // }
+            // Button {
+            //     text: i18n.tr("Settings")
+            //     onClicked: root.menuOpen = false
+            // }
+            // Button {
+            //     text: i18n.tr("About")
+            //     onClicked: root.menuOpen = false
+            // }
         }
     }
 
@@ -122,17 +147,6 @@ MainView {
             ]
         }
 
-        Label {
-            anchors {
-                top: header.bottom
-                left: parent.left
-                right: parent.right
-                bottom: parent.bottom
-            }
-            text: i18n.tr('Hello World!')
-
-            verticalAlignment: Label.AlignVCenter
-            horizontalAlignment: Label.AlignHCenter
-        }
+       
     }
 }
