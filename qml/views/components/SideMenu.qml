@@ -13,6 +13,8 @@ Rectangle {
         color: theme.palette.normal.background
         visible: root.menuOpen
         z: 2
+        border.color: "lightgrey"
+        radius :2
 
         Column {
             anchors.fill: parent
