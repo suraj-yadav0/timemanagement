@@ -90,31 +90,34 @@ MainView {
                 name : "note"
                 onClicked: root.menuOpen = false
             }
-            // Button {
 
-            //     text: i18n.tr("Tasks")
-            //     onClicked: root.menuOpen = false
-            // }
-            // Button {
-            //     text: i18n.tr("Calendar")
-            //     onClicked: root.menuOpen = false
-            // }
-            // Button {
-            //     text: i18n.tr("Pomodoro ")
-            //     onClicked: root.menuOpen = false
-            // }
-            // Button {
-            //     text: i18n.tr("Statistics")
-            //     onClicked: root.menuOpen = false
-            // }
-            // Button {
-            //     text: i18n.tr("Settings")
-            //     onClicked: root.menuOpen = false
-            // }
-            // Button {
-            //     text: i18n.tr("About")
-            //     onClicked: root.menuOpen = false
-            // }
+             Seprator {}
+
+            CustomButton{
+                text: i18n.tr("TimeSheets")
+                name : "appointment"
+                onClicked: root.menuOpen = false
+            }
+
+            Seprator {}
+
+            CustomButton{
+                text: i18n.tr("Settings")
+                name : "settings"
+                onClicked: root.menuOpen = false
+            }
+
+
+            Seprator {}
+
+            CustomButton{
+                text: i18n.tr("About")
+                name : "info"
+                onClicked: root.menuOpen = false
+            }
+
+            Seprator{}
+            
         }
     }
 
@@ -129,6 +132,7 @@ MainView {
             leadingActionBar.actions: [
                 Action {
                     iconName: "navigation-menu"
+                    
                     onTriggered: root.menuOpen = true
                 }
             ]

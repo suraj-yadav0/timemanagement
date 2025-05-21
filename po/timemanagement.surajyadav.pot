@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-21 06:08+0000\n"
+"POT-Creation-Date: 2025-05-21 06:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,14 +33,26 @@ msgstr ""
 msgid "Projects"
 msgstr ""
 
-#: ../qml/Main.qml:127 timemanagement.desktop.in.h:1
+#: ../qml/Main.qml:97
+msgid "TimeSheets"
+msgstr ""
+
+#: ../qml/Main.qml:105
+msgid "Settings"
+msgstr ""
+
+#: ../qml/Main.qml:114
+msgid "About"
+msgstr ""
+
+#: ../qml/Main.qml:130 timemanagement.desktop.in.h:1
 msgid "Time Management App"
 msgstr ""
 
-#: ../qml/Main.qml:138
+#: ../qml/Main.qml:142
 msgid "Dark Mode"
 msgstr ""
 
-#: ../qml/Main.qml:138
+#: ../qml/Main.qml:142
 msgid "Light Mode"
 msgstr ""

@@ -18,22 +18,24 @@ Row {
 
     Icon {
         id: icon
+     color: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "white" : "black"
         name: "notebook"
-        width: units.gu(2)
-        height: units.gu(2)
+        width: units.gu(2.5)
+        height: units.gu(2.7)
     }
     Rectangle {
 
         width: 116
         height: 26
-        color: "lightsteelblue"
+        color: "lightgrey"
         border.color: "slategrey"
-        radius : 10
+        radius : 7
 
         Text {
             id: label
             anchors.centerIn: parent
             text: text
+           // color: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "white" : "black"
         }
         MouseArea {
             anchors.fill: parent
