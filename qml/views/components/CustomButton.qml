@@ -1,7 +1,7 @@
 import QtQuick 2.7
 
 Rectangle {
-    id: root
+    id: customButton
     // export button properties
     property alias text: label.text
     signal clicked

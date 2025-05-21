@@ -62,23 +62,25 @@ MainView {
 
             Label {
                 text: i18n.tr("Menu")
+                color: 'red'
                 font.bold: true
                 anchors.horizontalCenter: parent.horizontalCenter
             }
 
 
-            //            Rectangle {
-            //     id: separator
-            //     width: parent.width / 1.5
-            //     height: units.gu(0.1)
-            //     color: 'black'
-            //     anchors.horizontalCenter: parent.horizontalCenter
-              
-            // }
+          Seprator{}
 
            Row {
             anchors.horizontalCenter: parent.horizontalCenter
             spacing: units.gu(1)
+
+            Icon {
+                id: icon
+                name: "notebook"
+                width: units.gu(2)
+                height: units.gu(2)
+
+            }
              CustomButton {
                 text: i18n.tr("Tasks")
                 onClicked: root.menuOpen = false
@@ -136,7 +138,7 @@ MainView {
             ]
             trailingActionBar.actions: [
                 Action {
-                iconName: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "weather-clear" : "weather-clear-night"
+                iconName: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "weather-clear-night" : "weather-clear"
                 text: theme.name === "Ubuntu.Components.Themes.SuruDark" ? i18n.tr("Light Mode") : i18n.tr("Dark Mode")
                 onTriggered: {
                 Theme.name = theme.name === "Ubuntu.Components.Themes.SuruDark" ? 
@@ -147,6 +149,8 @@ MainView {
             ]
         }
 
+
+        
        
     }
 }
