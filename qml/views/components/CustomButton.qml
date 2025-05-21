@@ -27,7 +27,7 @@ Row {
 
         width: 116
         height: 26
-        color: "lightgrey"
+        color: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "lightgrey" : "white"
         border.color: "slategrey"
         radius : 7
 

@@ -20,10 +20,10 @@ Rectangle {
             padding: units.gu(5)
 
             Label {
-                text: i18n.tr("Menu")
-                font.pixelSize : 20
+                text: i18n.tr("MENU")
+                font.pixelSize : 24
                 color: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "white" : "black"
-                font.bold: true
+               // font.bold: true
                 anchors.horizontalCenter: parent.horizontalCenter
             }
 
