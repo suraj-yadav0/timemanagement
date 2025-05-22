@@ -12,9 +12,6 @@ Rectangle {
     color: theme.palette.normal.background
     border.color: "lightgrey"
     radius: 2
-    // Only visible if permanent or menuOpen is true
-    visible: permanent || root.menuOpen
-    // Remove z property, let parent handle stacking
 
     Column {
         anchors.fill: parent
@@ -32,7 +29,9 @@ Rectangle {
 
         CustomButton {
             text: i18n.tr("Tasks")
-            onClicked: root.menuOpen = false
+            onClicked: {
+                // Handle Tasks button click
+            }
         }
 
         Seprator {}
@@ -40,7 +39,9 @@ Rectangle {
         CustomButton {
             text: i18n.tr("Calendar")
             name: "calendar"
-            onClicked: root.menuOpen = false
+            onClicked: {
+                // Handle Calendar button click
+            }
         }
 
         Seprator {}
@@ -48,7 +49,9 @@ Rectangle {
         CustomButton {
             text: i18n.tr("Projects")
             name: "note"
-            onClicked: root.menuOpen = false
+            onClicked: {
+                // Handle Projects button click
+            }
         }
 
         Seprator {}
@@ -56,7 +59,9 @@ Rectangle {
         CustomButton {
             text: i18n.tr("TimeSheets")
             name: "appointment"
-            onClicked: root.menuOpen = false
+            onClicked: {
+                // Handle TimeSheets button click
+            }
         }
 
         Seprator {}
@@ -64,7 +69,9 @@ Rectangle {
         CustomButton {
             text: i18n.tr("Settings")
             name: "settings"
-            onClicked: root.menuOpen = false
+            onClicked: {
+                // Handle Settings button click
+            }
         }
 
         Seprator {}
@@ -72,7 +79,9 @@ Rectangle {
         CustomButton {
             text: i18n.tr("About")
             name: "info"
-            onClicked: root.menuOpen = false
+            onClicked: {
+                // Handle About button click
+            }
         }
 
         Seprator {}

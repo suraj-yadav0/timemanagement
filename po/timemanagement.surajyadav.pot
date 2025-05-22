@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-22 06:22+0000\n"
+"POT-Creation-Date: 2025-05-22 06:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,43 +17,43 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/views/MainPage.qml:36 ../qml/views/MainPage.qml:73
+#: ../qml/views/MainPage.qml:36 ../qml/views/MainPage.qml:74
 #: timemanagement.desktop.in.h:1
 msgid "Time Management App"
 msgstr ""
 
-#: ../qml/views/MainPage.qml:47 ../qml/views/MainPage.qml:84
+#: ../qml/views/MainPage.qml:48 ../qml/views/MainPage.qml:85
 msgid "Dark Mode"
 msgstr ""
 
-#: ../qml/views/MainPage.qml:47 ../qml/views/MainPage.qml:84
+#: ../qml/views/MainPage.qml:48 ../qml/views/MainPage.qml:85
 msgid "Light Mode"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:25
+#: ../qml/views/components/SideMenu.qml:22
 msgid "MENU"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:34
+#: ../qml/views/components/SideMenu.qml:31
 msgid "Tasks"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:41
+#: ../qml/views/components/SideMenu.qml:40
 msgid "Calendar"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:49
+#: ../qml/views/components/SideMenu.qml:50
 msgid "Projects"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:57
+#: ../qml/views/components/SideMenu.qml:60
 msgid "TimeSheets"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:65
+#: ../qml/views/components/SideMenu.qml:70
 msgid "Settings"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:73
+#: ../qml/views/components/SideMenu.qml:80
 msgid "About"
 msgstr ""
