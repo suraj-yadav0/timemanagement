@@ -38,6 +38,7 @@ Item {
                 leadingActionBar.actions: [
                     Action {
                         iconName: "navigation-menu"
+                        visible: false // Hide in desktop mode
                         onTriggered: mainPageRoot.menuOpen = !mainPageRoot.menuOpen
                     }
                 ]
@@ -52,6 +53,8 @@ Item {
                 ]
             }
             // ...main page content...
+
+            
         }
     }
 

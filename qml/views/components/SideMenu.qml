@@ -20,6 +20,15 @@ Rectangle {
         spacing: units.gu(1)
         padding: units.gu(5)
 
+        Rectangle {
+            id: menuHeader
+            width: parent.width /2
+            height: units.gu(5)
+            color: theme.palette.normal.background
+            // border.color: "lightgrey"
+            // radius: 2
+        }
+
         Label {
             text: i18n.tr("MENU")
             font.pixelSize: 24
