@@ -53,8 +53,13 @@ Item {
                 ]
             }
             // ...main page content...
-
-            
+            Label {
+                text: i18n.tr("Welcome to the Time Management App!")
+                anchors.centerIn: parent
+                font.pixelSize: units.gu(4)
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
         }
     }
 
@@ -90,6 +95,13 @@ Item {
                 ]
             }
             // ...main page content...
+            Label {
+                text: i18n.tr("Welcome to the Time Management App!")
+                anchors.centerIn: parent
+                font.pixelSize: units.gu(2)
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+            }
         }
 
         SideMenu {
