@@ -14,7 +14,6 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-
 import QtQuick 2.7
 import Lomiri.Components 1.3
 import QtQuick.Controls 2.2
@@ -22,7 +21,6 @@ import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
 import "views/components"
 import "views"
-
 
 MainView {
     id: root
@@ -33,9 +31,9 @@ MainView {
     width: units.gu(45)
     height: units.gu(75)
 
-        property bool menuOpen: false
+    property bool menuOpen: false
 
-          Rectangle {
+    Rectangle {
         id: menuOverlay
         visible: root.menuOpen
         z: 2
@@ -44,26 +42,18 @@ MainView {
         anchors.fill: parent
         MouseArea {
             anchors.fill: parent
-            onClicked : root.menuOpen = false
-
-            }
-
-           
+            onClicked: root.menuOpen = false
         }
+    }
 
-    SideMenu{}
+    SideMenu {}
 
     PageStack {
         id: pageStack
         Component.onCompleted: push(mainPage)
-        
+
         MainPage {
             id: mainPage
-           
-            
-          
         }
-        
-    
     }
 }
