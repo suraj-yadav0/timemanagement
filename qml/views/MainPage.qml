@@ -38,7 +38,7 @@ Item {
                 leadingActionBar.actions: [
                     Action {
                         iconName: "navigation-menu"
-                        enabled: false // No toggle in desktop mode
+                        onTriggered: mainPageRoot.menuOpen = !mainPageRoot.menuOpen
                     }
                 ]
                 trailingActionBar.actions: [
@@ -46,9 +46,7 @@ Item {
                         iconName: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "weather-clear-night" : "weather-clear"
                         text: theme.name === "Ubuntu.Components.Themes.SuruDark" ? i18n.tr("Light Mode") : i18n.tr("Dark Mode")
                         onTriggered: {
-                            Theme.name = theme.name === "Ubuntu.Components.Themes.SuruDark"
-                                ? "Ubuntu.Components.Themes.Ambiance"
-                                : "Ubuntu.Components.Themes.SuruDark";
+                            Theme.name = theme.name === "Ubuntu.Components.Themes.SuruDark" ? "Ubuntu.Components.Themes.Ambiance" : "Ubuntu.Components.Themes.SuruDark";
                         }
                     }
                 ]
@@ -83,9 +81,7 @@ Item {
                         iconName: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "weather-clear-night" : "weather-clear"
                         text: theme.name === "Ubuntu.Components.Themes.SuruDark" ? i18n.tr("Light Mode") : i18n.tr("Dark Mode")
                         onTriggered: {
-                            Theme.name = theme.name === "Ubuntu.Components.Themes.SuruDark"
-                                ? "Ubuntu.Components.Themes.Ambiance"
-                                : "Ubuntu.Components.Themes.SuruDark";
+                            Theme.name = theme.name === "Ubuntu.Components.Themes.SuruDark" ? "Ubuntu.Components.Themes.Ambiance" : "Ubuntu.Components.Themes.SuruDark";
                         }
                     }
                 ]

@@ -14,7 +14,6 @@ Rectangle {
     radius: 2
     // Only visible if permanent or menuOpen is true
     visible: permanent || root.menuOpen
-    // Remove z property, let parent handle stacking
 
     Column {
         anchors.fill: parent
@@ -78,4 +77,3 @@ Rectangle {
         Seprator {}
     }
 }
-
