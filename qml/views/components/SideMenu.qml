@@ -12,8 +12,8 @@ Rectangle {
     color: theme.palette.normal.background
     border.color: "lightgrey"
     radius: 2
-    // Only visible if permanent or menuOpen is true
-    visible: permanent || root.menuOpen
+    // Only visible if permanent, or (not permanent and root.menuOpen)
+    visible: permanent || (!permanent && root.menuOpen)
     // Remove z property, let parent handle stacking
 
     Column {
