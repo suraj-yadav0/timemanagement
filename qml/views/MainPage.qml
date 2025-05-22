@@ -8,27 +8,25 @@ Item {
     id: mainPageRoot
     anchors.fill: parent
 
-    property bool menuOpen: true // default open in desktop
+    property bool menuOpen: false
     property bool isDesktop: width > 800
 
-    // Desktop layout: SideMenu can be toggled, Page content resizes accordingly
+    // Desktop layout: SideMenu always visible, Page content to the right
     RowLayout {
         id: desktopLayout
         anchors.fill: parent
         visible: mainPageRoot.isDesktop
 
-        // Only show SideMenu if menuOpen is true
         SideMenu {
             id: sideMenuDesktop
             Layout.preferredWidth: units.gu(30)
             Layout.fillHeight: true
-            permanent: mainPageRoot.isDesktop
-            visible: permanent ||  mainPageRoot.menuOpen
+            permanent: true
+            visible: true
         }
 
         Page {
             id: mainPageDesktop
-            // Take full width if menu is closed, else fill remaining space
             Layout.fillWidth: true
             Layout.fillHeight: true
             z: 1
@@ -40,7 +38,7 @@ Item {
                 leadingActionBar.actions: [
                     Action {
                         iconName: "navigation-menu"
-                        onTriggered: mainPageRoot.menuOpen = !mainPageRoot.menuOpen
+                        enabled: false // No toggle in desktop mode
                     }
                 ]
                 trailingActionBar.actions: [
