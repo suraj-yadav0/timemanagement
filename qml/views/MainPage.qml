@@ -21,8 +21,8 @@ Item {
             id: sideMenuDesktop
             Layout.preferredWidth: units.gu(30)
             Layout.fillHeight: true
-            permanent: false
-            visible: mainPageRoot.menuOpen
+            permanent: true
+            visible: true
         }
 
         Page {
@@ -38,8 +38,7 @@ Item {
                 leadingActionBar.actions: [
                     Action {
                         iconName: "navigation-menu"
-                        enabled: true
-                        onTriggered: mainPageRoot.menuOpen = !mainPageRoot.menuOpen
+                        enabled: false // No toggle in desktop mode
                     }
                 ]
                 trailingActionBar.actions: [
