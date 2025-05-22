@@ -46,7 +46,10 @@ MainView {
         }
     }
 
-    SideMenu {}
+    SideMenu {
+         stackView: pageStack  
+                                                                                        
+    }
 
     PageStack {
         id: pageStack
