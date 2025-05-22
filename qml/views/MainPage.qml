@@ -11,35 +11,34 @@ Item {
     property bool menuOpen: false
     property bool isDesktop: width > 800
 
+    // Desktop layout: SideMenu always visible, Page content to the right
     RowLayout {
+        id: desktopLayout
         anchors.fill: parent
+        visible: mainPageRoot.isDesktop
 
         SideMenu {
-            id: sideMenu
+            id: sideMenuDesktop
             Layout.preferredWidth: units.gu(30)
             Layout.fillHeight: true
-            permanent: mainPageRoot.isDesktop
-            // Only allow overlay toggle in mobile mode
-            visible: permanent || mainPageRoot.menuOpen
+            permanent: true
+            visible: true
         }
 
         Page {
-            id: mainPage
+            id: mainPageDesktop
             Layout.fillWidth: true
             Layout.fillHeight: true
             z: 1
 
             header: PageHeader {
-                id: header
+                id: headerDesktop
                 title: i18n.tr('Time Management App')
 
                 leadingActionBar.actions: [
                     Action {
                         iconName: "navigation-menu"
-                        onTriggered: {
-                            if (!mainPageRoot.isDesktop)
-                                mainPageRoot.menuOpen = !mainPageRoot.menuOpen
-                        }
+                        enabled: false // No toggle in desktop mode
                     }
                 ]
                 trailingActionBar.actions: [
@@ -58,16 +57,64 @@ Item {
         }
     }
 
-    // Overlay for closing menu in mobile mode
-    Rectangle {
+    // Mobile layout: SideMenu overlays content
+    Item {
+        id: mobileLayout
         anchors.fill: parent
-        color: "black"
-        opacity: 0.3
-        visible: menuOpen && !isDesktop
-        z: 999
-        MouseArea {
+        visible: !mainPageRoot.isDesktop
+
+        Page {
+            id: mainPageMobile
             anchors.fill: parent
-            onClicked: mainPageRoot.menuOpen = false
+            z: 1
+
+            header: PageHeader {
+                id: headerMobile
+                title: i18n.tr('Time Management App')
+
+                leadingActionBar.actions: [
+                    Action {
+                        iconName: "navigation-menu"
+                        onTriggered: mainPageRoot.menuOpen = !mainPageRoot.menuOpen
+                    }
+                ]
+                trailingActionBar.actions: [
+                    Action {
+                        iconName: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "weather-clear-night" : "weather-clear"
+                        text: theme.name === "Ubuntu.Components.Themes.SuruDark" ? i18n.tr("Light Mode") : i18n.tr("Dark Mode")
+                        onTriggered: {
+                            Theme.name = theme.name === "Ubuntu.Components.Themes.SuruDark"
+                                ? "Ubuntu.Components.Themes.Ambiance"
+                                : "Ubuntu.Components.Themes.SuruDark";
+                        }
+                    }
+                ]
+            }
+            // ...main page content...
+        }
+
+        SideMenu {
+            id: sideMenuMobile
+            anchors.left: parent.left
+            anchors.top: parent.top
+            anchors.bottom: parent.bottom
+            width: units.gu(30)
+            permanent: false
+            visible: mainPageRoot.menuOpen
+            z: 2
+        }
+
+        // Overlay for closing menu in mobile mode
+        Rectangle {
+            anchors.fill: parent
+            color: "black"
+            opacity: 0.3
+            visible: mainPageRoot.menuOpen
+            z: 1
+            MouseArea {
+                anchors.fill: parent
+                onClicked: mainPageRoot.menuOpen = false
+            }
         }
     }
 }
