@@ -3,7 +3,7 @@ import Lomiri.Components 1.3
 import Ubuntu.Components.Popups 1.3
 import QtQuick.Layouts 1.3
 import QtQuick.Controls 2.2
-import "components"
+// import "views/components"
 
 Item {
     id: mainPageRoot

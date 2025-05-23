@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-23 04:40+0000\n"
+"POT-Creation-Date: 2025-05-23 05:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,56 +17,59 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/views/MainPage.qml:39 ../qml/views/MainPage.qml:81
-#: timemanagement.desktop.in.h:1
+#: ../qml/views/components/MainPage.qml:39
+#: ../qml/views/components/MainPage.qml:81 timemanagement.desktop.in.h:1
 msgid "Time Management App"
 msgstr ""
 
-#: ../qml/views/MainPage.qml:50 ../qml/views/MainPage.qml:91
+#: ../qml/views/components/MainPage.qml:50
+#: ../qml/views/components/MainPage.qml:91
 msgid "Dark Mode"
 msgstr ""
 
-#: ../qml/views/MainPage.qml:50 ../qml/views/MainPage.qml:91
+#: ../qml/views/components/MainPage.qml:50
+#: ../qml/views/components/MainPage.qml:91
 msgid "Light Mode"
 msgstr ""
 
-#: ../qml/views/MainPage.qml:58 ../qml/views/MainPage.qml:99
+#: ../qml/views/components/MainPage.qml:58
+#: ../qml/views/components/MainPage.qml:99
 msgid "Welcome to the Time Management App!"
 msgstr ""
 
-#: ../qml/views/components/ProjectList.qml:46
-#: ../qml/views/components/SideMenu.qml:87
+#: ../qml/views/components/ProjectList.qml:47
+#: ../qml/views/components/SideMenu.qml:91
 msgid "Projects"
 msgstr ""
 
-#: ../qml/views/components/ProjectList.qml:140
+#: ../qml/views/components/ProjectList.qml:141
 msgid "No projects yet"
 msgstr ""
 
-#: ../qml/views/components/ProjectList.qml:147
+#: ../qml/views/components/ProjectList.qml:148
 msgid "Tap the + button to create your first project"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:60
+#: ../qml/views/components/SideMenu.qml:59
 msgid "MENU"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:69
-msgid "Tasks"
+#: ../qml/views/components/SideMenu.qml:68
+msgid "Home"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:79
+#: ../qml/views/components/SideMenu.qml:83
 msgid "Calendar"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:110
+#: ../qml/views/components/SideMenu.qml:114
 msgid "TimeSheets"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:118
+#: ../qml/views/components/SideMenu.qml:122
 msgid "Settings"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:126
+#: ../qml/views/components/SideMenu.qml:130
 msgid "About"
 msgstr ""

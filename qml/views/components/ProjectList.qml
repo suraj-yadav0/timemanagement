@@ -20,8 +20,9 @@ Page {
             width: parent.width
             spacing: units.gu(2)
 
-              Button {
-                visible: width < 800
+            Button {
+                // Only visible on non-desktop platforms (mobile/tablet)
+                visible: (width < 800) && (Qt.platform.os !== "windows" )
                 anchors.verticalCenter: parent.verticalCenter
                 
                 width: units.gu(5)

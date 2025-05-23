@@ -5,7 +5,6 @@ import QtQuick.Layouts 1.3
 import Qt.labs.settings 1.0
 
 
-
 Rectangle {
     id: sideMenu
     property bool permanent: false
@@ -66,9 +65,14 @@ Rectangle {
         Seprator {}
         
         CustomButton {
-            text: i18n.tr("Tasks")
+            text: i18n.tr("Home")
+            name: "home"
             onClicked: {
                 console.log("Tasks clicked")
+                stackView = findStackView();
+                  var mainPageUrl = Qt.resolvedUrl("MainPage.qml")
+                    console.log("Resolved URL:", mainPageUrl)
+                    stackView.push(mainPageUrl)
                 root.menuOpen = false
             }
         }
