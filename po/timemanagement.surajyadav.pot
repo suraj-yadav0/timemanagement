@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-23 05:06+0000\n"
+"POT-Creation-Date: 2025-05-23 08:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,166 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/Main.qml:22
+msgid "Main Menu"
+msgstr ""
+
+#: ../qml/Main.qml:87 ../qml/views/components/SideMenu.qml:122
+msgid "Settings"
+msgstr ""
+
+#: ../qml/Main.qml:136
+msgid "Messages"
+msgstr ""
+
+#: ../qml/Main.qml:141 ../qml/Main.qml:533
+msgid "New Message"
+msgstr ""
+
+#: ../qml/Main.qml:211
+msgid "Files"
+msgstr ""
+
+#: ../qml/Main.qml:255
+msgid "General Settings"
+msgstr ""
+
+#: ../qml/Main.qml:269
+msgid "App Theme"
+msgstr ""
+
+#: ../qml/Main.qml:270
+msgid "Light or dark theme"
+msgstr ""
+
+#: ../qml/Main.qml:281
+msgid "Language"
+msgstr ""
+
+#: ../qml/Main.qml:282
+msgid "App language"
+msgstr ""
+
+#: ../qml/Main.qml:285
+msgid "English"
+msgstr ""
+
+#: ../qml/Main.qml:293
+msgid "Auto-save"
+msgstr ""
+
+#: ../qml/Main.qml:294
+msgid "Automatically save changes"
+msgstr ""
+
+#: ../qml/Main.qml:309
+msgid "Privacy Settings"
+msgstr ""
+
+#: ../qml/Main.qml:322
+msgid "Data Collection"
+msgstr ""
+
+#: ../qml/Main.qml:332
+msgid "Analytics"
+msgstr ""
+
+#: ../qml/Main.qml:333
+msgid "Help improve the app"
+msgstr ""
+
+#: ../qml/Main.qml:343
+msgid "Crash Reports"
+msgstr ""
+
+#: ../qml/Main.qml:344
+msgid "Send crash reports"
+msgstr ""
+
+#: ../qml/Main.qml:359
+msgid "Notifications"
+msgstr ""
+
+#: ../qml/Main.qml:373
+msgid "Push Notifications"
+msgstr ""
+
+#: ../qml/Main.qml:374
+msgid "Receive push notifications"
+msgstr ""
+
+#: ../qml/Main.qml:385
+msgid "Sound"
+msgstr ""
+
+#: ../qml/Main.qml:386
+msgid "Play notification sounds"
+msgstr ""
+
+#: ../qml/Main.qml:397
+msgid "Vibration"
+msgstr ""
+
+#: ../qml/Main.qml:398
+msgid "Vibrate on notifications"
+msgstr ""
+
+#: ../qml/Main.qml:412 ../qml/views/components/SideMenu.qml:130
+msgid "About"
+msgstr ""
+
+#: ../qml/Main.qml:437
+msgid "My Ubuntu Touch App"
+msgstr ""
+
+#: ../qml/Main.qml:443
+msgid "Version 1.0.0"
+msgstr ""
+
+#: ../qml/Main.qml:448
+msgid "Built with love using QML and Ubuntu SDK"
+msgstr ""
+
+#: ../qml/Main.qml:469
+msgid "Reply"
+msgstr ""
+
+#: ../qml/Main.qml:490
+msgid "From:"
+msgstr ""
+
+#: ../qml/Main.qml:503
+msgid "Time:"
+msgstr ""
+
+#: ../qml/Main.qml:520
+msgid ""
+"\n"
+"\n"
+"This is the full message content. In a real app, you would load the complete "
+"message text here."
+msgstr ""
+
+#: ../qml/Main.qml:538
+msgid "Cancel"
+msgstr ""
+
+#: ../qml/Main.qml:549
+msgid "Send"
+msgstr ""
+
+#: ../qml/Main.qml:573
+msgid "To"
+msgstr ""
+
+#: ../qml/Main.qml:581
+msgid "Subject"
+msgstr ""
+
+#: ../qml/Main.qml:590
+msgid "Message"
+msgstr ""
 
 #: ../qml/views/components/MainPage.qml:39
 #: ../qml/views/components/MainPage.qml:81 timemanagement.desktop.in.h:1
@@ -64,12 +224,4 @@ msgstr ""
 
 #: ../qml/views/components/SideMenu.qml:114
 msgid "TimeSheets"
-msgstr ""
-
-#: ../qml/views/components/SideMenu.qml:122
-msgid "Settings"
-msgstr ""
-
-#: ../qml/views/components/SideMenu.qml:130
-msgid "About"
 msgstr ""
