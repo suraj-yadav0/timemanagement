@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-23 11:54+0000\n"
+"POT-Creation-Date: 2025-05-23 11:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,337 +21,337 @@ msgstr ""
 msgid "Time Management"
 msgstr ""
 
-#: ../qml/Main.qml:107
+#: ../qml/Main.qml:106
 msgid "Projects"
 msgstr ""
 
-#: ../qml/Main.qml:112 ../qml/Main.qml:1248
+#: ../qml/Main.qml:111 ../qml/Main.qml:1242
 msgid "New Project"
 msgstr ""
 
-#: ../qml/Main.qml:185
+#: ../qml/Main.qml:183
 msgid "Time Sheet"
 msgstr ""
 
-#: ../qml/Main.qml:190 ../qml/Main.qml:660
+#: ../qml/Main.qml:188 ../qml/Main.qml:655
 msgid "Add Time Entry"
 msgstr ""
 
-#: ../qml/Main.qml:288
+#: ../qml/Main.qml:285
 msgid "Calendar"
 msgstr ""
 
-#: ../qml/Main.qml:293
+#: ../qml/Main.qml:290
 msgid "New Event"
 msgstr ""
 
-#: ../qml/Main.qml:411
+#: ../qml/Main.qml:408
 msgid "Tasks"
 msgstr ""
 
-#: ../qml/Main.qml:416
+#: ../qml/Main.qml:413
 msgid "New Task"
 msgstr ""
 
-#: ../qml/Main.qml:493
+#: ../qml/Main.qml:489
 msgid "Settings"
 msgstr ""
 
-#: ../qml/Main.qml:555 ../qml/Main.qml:791 ../qml/Main.qml:979
+#: ../qml/Main.qml:550 ../qml/Main.qml:786 ../qml/Main.qml:974
 msgid "Edit"
 msgstr ""
 
-#: ../qml/Main.qml:572
+#: ../qml/Main.qml:567
 msgid "Progress"
 msgstr ""
 
-#: ../qml/Main.qml:588
+#: ../qml/Main.qml:583
 msgid "Deadline:"
 msgstr ""
 
-#: ../qml/Main.qml:602
+#: ../qml/Main.qml:597
 msgid "Priority:"
 msgstr ""
 
-#: ../qml/Main.qml:618
+#: ../qml/Main.qml:613
 msgid "Project Tasks"
 msgstr ""
 
-#: ../qml/Main.qml:665 ../qml/Main.qml:874 ../qml/Main.qml:1131
-#: ../qml/Main.qml:1253
+#: ../qml/Main.qml:660 ../qml/Main.qml:869 ../qml/Main.qml:1125
+#: ../qml/Main.qml:1247
 msgid "Cancel"
 msgstr ""
 
-#: ../qml/Main.qml:675 ../qml/Main.qml:884 ../qml/Main.qml:1141
-#: ../qml/Main.qml:1263
+#: ../qml/Main.qml:670 ../qml/Main.qml:879 ../qml/Main.qml:1135
+#: ../qml/Main.qml:1257
 msgid "Save"
 msgstr ""
 
-#: ../qml/Main.qml:694 ../qml/Main.qml:1172
+#: ../qml/Main.qml:689 ../qml/Main.qml:1166
 msgid "Date"
 msgstr ""
 
-#: ../qml/Main.qml:702
+#: ../qml/Main.qml:697
 msgid "Select Date"
 msgstr ""
 
-#: ../qml/Main.qml:707 ../qml/Main.qml:915
+#: ../qml/Main.qml:702 ../qml/Main.qml:910
 msgid "Project"
 msgstr ""
 
-#: ../qml/Main.qml:720
+#: ../qml/Main.qml:715
 msgid "Task"
 msgstr ""
 
-#: ../qml/Main.qml:728
+#: ../qml/Main.qml:723
 msgid "Task Description"
 msgstr ""
 
-#: ../qml/Main.qml:740 ../qml/Main.qml:1192
+#: ../qml/Main.qml:735 ../qml/Main.qml:1186
 msgid "Start Time"
 msgstr ""
 
-#: ../qml/Main.qml:745 ../qml/Main.qml:1197
+#: ../qml/Main.qml:740 ../qml/Main.qml:1191
 msgid "9:00 AM"
 msgstr ""
 
-#: ../qml/Main.qml:754 ../qml/Main.qml:1206
+#: ../qml/Main.qml:749 ../qml/Main.qml:1200
 msgid "End Time"
 msgstr ""
 
-#: ../qml/Main.qml:759
+#: ../qml/Main.qml:754
 msgid "5:00 PM"
 msgstr ""
 
-#: ../qml/Main.qml:765
+#: ../qml/Main.qml:760
 msgid "Notes"
 msgstr ""
 
-#: ../qml/Main.qml:774
+#: ../qml/Main.qml:769
 msgid "Additional notes (optional)"
 msgstr ""
 
-#: ../qml/Main.qml:786
+#: ../qml/Main.qml:781
 msgid "Time Entry Details"
 msgstr ""
 
-#: ../qml/Main.qml:811
+#: ../qml/Main.qml:806
 msgid "Date:"
 msgstr ""
 
-#: ../qml/Main.qml:825 ../qml/Main.qml:1013
+#: ../qml/Main.qml:820 ../qml/Main.qml:1008
 msgid "Project:"
 msgstr ""
 
-#: ../qml/Main.qml:839 ../qml/Main.qml:999
+#: ../qml/Main.qml:834 ../qml/Main.qml:994
 msgid "Task:"
 msgstr ""
 
-#: ../qml/Main.qml:853
+#: ../qml/Main.qml:848
 msgid "Hours:"
 msgstr ""
 
-#: ../qml/Main.qml:869
+#: ../qml/Main.qml:864
 msgid "Add Task"
 msgstr ""
 
-#: ../qml/Main.qml:903
+#: ../qml/Main.qml:898
 msgid "Task Name"
 msgstr ""
 
-#: ../qml/Main.qml:911
+#: ../qml/Main.qml:906
 msgid "Enter task name"
 msgstr ""
 
-#: ../qml/Main.qml:928
+#: ../qml/Main.qml:923
 msgid "Due Date"
 msgstr ""
 
-#: ../qml/Main.qml:936
+#: ../qml/Main.qml:931
 msgid "Select due date"
 msgstr ""
 
-#: ../qml/Main.qml:940 ../qml/Main.qml:1306
+#: ../qml/Main.qml:935 ../qml/Main.qml:1300
 msgid "Priority"
 msgstr ""
 
-#: ../qml/Main.qml:953 ../qml/Main.qml:1229 ../qml/Main.qml:1319
+#: ../qml/Main.qml:948 ../qml/Main.qml:1223 ../qml/Main.qml:1313
 msgid "Description"
 msgstr ""
 
-#: ../qml/Main.qml:962
+#: ../qml/Main.qml:957
 msgid "Task description"
 msgstr ""
 
-#: ../qml/Main.qml:974
+#: ../qml/Main.qml:969
 msgid "Task Details"
 msgstr ""
 
-#: ../qml/Main.qml:1027
+#: ../qml/Main.qml:1022
 msgid "Due Date:"
 msgstr ""
 
-#: ../qml/Main.qml:1041
+#: ../qml/Main.qml:1036
 msgid "Status:"
 msgstr ""
 
-#: ../qml/Main.qml:1046
+#: ../qml/Main.qml:1041
 msgid "Completed"
 msgstr ""
 
-#: ../qml/Main.qml:1046
+#: ../qml/Main.qml:1041
 msgid "In Progress"
 msgstr ""
 
-#: ../qml/Main.qml:1064 ../qml/Main.qml:1126
+#: ../qml/Main.qml:1059 ../qml/Main.qml:1120
 msgid "Add Event"
 msgstr ""
 
-#: ../qml/Main.qml:1160
+#: ../qml/Main.qml:1154
 msgid "Event Title"
 msgstr ""
 
-#: ../qml/Main.qml:1168
+#: ../qml/Main.qml:1162
 msgid "Enter event title"
 msgstr ""
 
-#: ../qml/Main.qml:1180
+#: ../qml/Main.qml:1174
 msgid "Select date"
 msgstr ""
 
-#: ../qml/Main.qml:1211
+#: ../qml/Main.qml:1205
 msgid "10:00 AM"
 msgstr ""
 
-#: ../qml/Main.qml:1217
+#: ../qml/Main.qml:1211
 msgid "Location"
 msgstr ""
 
-#: ../qml/Main.qml:1225
+#: ../qml/Main.qml:1219
 msgid "Enter location"
 msgstr ""
 
-#: ../qml/Main.qml:1238
+#: ../qml/Main.qml:1232
 msgid "Event description"
 msgstr ""
 
-#: ../qml/Main.qml:1282
+#: ../qml/Main.qml:1276
 msgid "Project Name"
 msgstr ""
 
-#: ../qml/Main.qml:1290
+#: ../qml/Main.qml:1284
 msgid "Enter project name"
 msgstr ""
 
-#: ../qml/Main.qml:1294
+#: ../qml/Main.qml:1288
 msgid "Deadline"
 msgstr ""
 
-#: ../qml/Main.qml:1302
+#: ../qml/Main.qml:1296
 msgid "Select deadline"
 msgstr ""
 
-#: ../qml/Main.qml:1328
+#: ../qml/Main.qml:1322
 msgid "Project description"
 msgstr ""
 
-#: ../qml/Main.qml:1339
+#: ../qml/Main.qml:1333
 msgid "General Settings"
 msgstr ""
 
-#: ../qml/Main.qml:1353
+#: ../qml/Main.qml:1347
 msgid "App Theme"
 msgstr ""
 
-#: ../qml/Main.qml:1354
+#: ../qml/Main.qml:1348
 msgid "Light or dark theme"
 msgstr ""
 
-#: ../qml/Main.qml:1365
+#: ../qml/Main.qml:1359
 msgid "Language"
 msgstr ""
 
-#: ../qml/Main.qml:1366
+#: ../qml/Main.qml:1360
 msgid "App language"
 msgstr ""
 
-#: ../qml/Main.qml:1369
+#: ../qml/Main.qml:1363
 msgid "English"
 msgstr ""
 
-#: ../qml/Main.qml:1377
+#: ../qml/Main.qml:1371
 msgid "Auto-save"
 msgstr ""
 
-#: ../qml/Main.qml:1378
+#: ../qml/Main.qml:1372
 msgid "Automatically save changes"
 msgstr ""
 
-#: ../qml/Main.qml:1393
+#: ../qml/Main.qml:1387
 msgid "Privacy Settings"
 msgstr ""
 
-#: ../qml/Main.qml:1406
+#: ../qml/Main.qml:1400
 msgid "Data Collection"
 msgstr ""
 
-#: ../qml/Main.qml:1416
+#: ../qml/Main.qml:1410
 msgid "Analytics"
 msgstr ""
 
-#: ../qml/Main.qml:1417
+#: ../qml/Main.qml:1411
 msgid "Help improve the app"
 msgstr ""
 
-#: ../qml/Main.qml:1427
+#: ../qml/Main.qml:1421
 msgid "Crash Reports"
 msgstr ""
 
-#: ../qml/Main.qml:1428
+#: ../qml/Main.qml:1422
 msgid "Send crash reports"
 msgstr ""
 
-#: ../qml/Main.qml:1443
+#: ../qml/Main.qml:1437
 msgid "Notifications"
 msgstr ""
 
-#: ../qml/Main.qml:1457
+#: ../qml/Main.qml:1451
 msgid "Push Notifications"
 msgstr ""
 
-#: ../qml/Main.qml:1458
+#: ../qml/Main.qml:1452
 msgid "Receive push notifications"
 msgstr ""
 
-#: ../qml/Main.qml:1469
+#: ../qml/Main.qml:1463
 msgid "Sound"
 msgstr ""
 
-#: ../qml/Main.qml:1470
+#: ../qml/Main.qml:1464
 msgid "Play notification sounds"
 msgstr ""
 
-#: ../qml/Main.qml:1481
+#: ../qml/Main.qml:1475
 msgid "Vibration"
 msgstr ""
 
-#: ../qml/Main.qml:1482
+#: ../qml/Main.qml:1476
 msgid "Vibrate on notifications"
 msgstr ""
 
-#: ../qml/Main.qml:1496
+#: ../qml/Main.qml:1490
 msgid "About"
 msgstr ""
 
-#: ../qml/Main.qml:1521
+#: ../qml/Main.qml:1515
 msgid "My Ubuntu Touch App"
 msgstr ""
 
-#: ../qml/Main.qml:1527
+#: ../qml/Main.qml:1521
 msgid "Version 1.0.0"
 msgstr ""
 
-#: ../qml/Main.qml:1532
+#: ../qml/Main.qml:1526
 msgid "Built with love using QML and Ubuntu SDK"
 msgstr ""
 

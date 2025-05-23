@@ -28,7 +28,6 @@ MainView {
                     right: parent.right
                     bottom: parent.bottom
                     top: parent.header.bottom
-                    topMargin: units.gu(2) // Adding vertical space between header and list
                 }
                 
                 model: ListModel {
@@ -123,7 +122,6 @@ MainView {
                     right: parent.right
                     bottom: parent.bottom
                     top: parent.header.bottom
-                    topMargin: units.gu(2)
                 }
                 
                 model: ListModel {
@@ -201,7 +199,6 @@ MainView {
                     right: parent.right
                     bottom: parent.bottom
                     top: parent.header.bottom
-                    topMargin: units.gu(2)
                 }
                 
                 model: ListModel {
@@ -427,7 +424,6 @@ MainView {
                     right: parent.right
                     bottom: parent.bottom
                     top: parent.header.bottom
-                    topMargin: units.gu(2)
                 }
                 
                 model: ListModel {
@@ -499,7 +495,6 @@ MainView {
                     right: parent.right
                     bottom: parent.bottom
                     top: parent.header.bottom
-                    topMargin: units.gu(2)
                 }
                 
                 model: ListModel {
@@ -1075,7 +1070,6 @@ MainView {
                     right: parent.right
                     bottom: parent.bottom
                     top: parent.header.bottom
-                    topMargin: units.gu(2)
                 }
                 
                 model: ListModel {
