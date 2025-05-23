@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-22 10:46+0000\n"
+"POT-Creation-Date: 2025-05-23 04:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,16 +34,16 @@ msgstr ""
 msgid "Welcome to the Time Management App!"
 msgstr ""
 
-#: ../qml/views/components/ProjectList.qml:45
+#: ../qml/views/components/ProjectList.qml:46
 #: ../qml/views/components/SideMenu.qml:87
 msgid "Projects"
 msgstr ""
 
-#: ../qml/views/components/ProjectList.qml:139
+#: ../qml/views/components/ProjectList.qml:140
 msgid "No projects yet"
 msgstr ""
 
-#: ../qml/views/components/ProjectList.qml:146
+#: ../qml/views/components/ProjectList.qml:147
 msgid "Tap the + button to create your first project"
 msgstr ""
 

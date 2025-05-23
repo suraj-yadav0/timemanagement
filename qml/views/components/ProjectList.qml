@@ -21,6 +21,7 @@ Page {
             spacing: units.gu(2)
 
               Button {
+                visible: width < 800
                 anchors.verticalCenter: parent.verticalCenter
                 
                 width: units.gu(5)
