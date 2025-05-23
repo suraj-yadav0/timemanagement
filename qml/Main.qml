@@ -53,7 +53,10 @@ MainView {
 
     PageStack {
         id: pageStack
-        Component.onCompleted:
-            push(Qt.resolvedUrl("views/components/MainPage.qml"))
+        Component.onCompleted: push(mainPage)
+
+        MainPage {
+            id: mainPage
+        }
     }
 }
