@@ -12,7 +12,17 @@ Item {
     property bool menuOpen: false
     property bool isDesktop: width > 800
 
-   
+    //––– New menu model ––––––––––––––––––––––––––––––––––––––––––––––
+    ListModel {
+        id: menuModel
+        ListElement { title: "Projects";   iconName: "folder";   source: "ProjectList.qml"   }
+        ListElement { title: "Tasks";      iconName: "tasks";    source: "TasksPage.qml"     }
+        ListElement { title: "TimeSheets"; iconName: "history";  source: "TimeSheetsPage.qml"}
+        ListElement { title: "Calendar";   iconName: "calendar"; source: "CalendarPage.qml"  }
+        ListElement { title: "Settings";   iconName: "settings"; source: "SettingsPage.qml"  }
+    }
+    //–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
     // Desktop layout: SideMenu always visible, Page content to the right
     RowLayout {
         id: desktopLayout
@@ -24,44 +34,25 @@ Item {
             Layout.preferredWidth: units.gu(30)
             Layout.fillHeight: true
             permanent: true
-            visible: true
-            stackView: stackViewDesktop
+
+            Column {
+                anchors.fill: parent
+                Repeater {
+                    model: menuModel
+                    delegate: Button {
+                        text: model.title
+                        icon.name: model.iconName
+                        onClicked: stackViewDesktop.push( Qt.resolvedUrl(model.source) )
+                    }
+                }
+            }
         }
 
         StackView {
             id: stackViewDesktop
             Layout.fillWidth: true
             Layout.fillHeight: true
-            initialItem: Page {
-                id: mainPageDesktop
-                header: PageHeader {
-                    id: headerDesktop
-                    title: i18n.tr('Time Management App')
-                    leadingActionBar.actions: [
-                        Action {
-                            iconName: "navigation-menu"
-                            visible: false // Hide in desktop mode
-                            onTriggered: mainPageRoot.menuOpen = !mainPageRoot.menuOpen
-                        }
-                    ]
-                    trailingActionBar.actions: [
-                        Action {
-                            iconName: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "weather-clear-night" : "weather-clear"
-                            text: theme.name === "Ubuntu.Components.Themes.SuruDark" ? i18n.tr("Light Mode") : i18n.tr("Dark Mode")
-                            onTriggered: {
-                                Theme.name = theme.name === "Ubuntu.Components.Themes.SuruDark" ? "Ubuntu.Components.Themes.Ambiance" : "Ubuntu.Components.Themes.SuruDark";
-                            }
-                        }
-                    ]
-                }
-                Label {
-                    text: i18n.tr("Welcome to the Time Management App!")
-                    anchors.centerIn: parent
-                    font.pixelSize: units.gu(4)
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                }
-            }
+            initialItem: Qt.resolvedUrl("ProjectList.qml")       // start on Projects
         }
     }
 
@@ -74,47 +65,31 @@ Item {
         StackView {
             id: stackViewMobile
             anchors.fill: parent
-            initialItem: Page {
-                id: mainPageMobile
-                header: PageHeader {
-                    id: headerMobile
-                    title: i18n.tr('Time Management App')
-                    leadingActionBar.actions: [
-                        Action {
-                            iconName: "navigation-menu"
-                            onTriggered: mainPageRoot.menuOpen = !mainPageRoot.menuOpen
-                        }
-                    ]
-                    trailingActionBar.actions: [
-                        Action {
-                            iconName: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "weather-clear-night" : "weather-clear"
-                            text: theme.name === "Ubuntu.Components.Themes.SuruDark" ? i18n.tr("Light Mode") : i18n.tr("Dark Mode")
-                            onTriggered: {
-                                Theme.name = theme.name === "Ubuntu.Components.Themes.SuruDark" ? "Ubuntu.Components.Themes.Ambiance" : "Ubuntu.Components.Themes.SuruDark";
-                            }
-                        }
-                    ]
-                }
-                Label {
-                    text: i18n.tr("Welcome to the Time Management App!")
-                    anchors.centerIn: parent
-                    font.pixelSize: units.gu(2)
-                    horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                }
-            }
+            initialItem: Qt.resolvedUrl("ProjectList.qml")
         }
 
         SideMenu {
             id: sideMenuMobile
-            anchors.left: parent.left
-            anchors.top: parent.top
-            anchors.bottom: parent.bottom
+            anchors { left: parent.left; top: parent.top; bottom: parent.bottom }
             width: units.gu(30)
             permanent: false
             visible: mainPageRoot.menuOpen
             z: 2
-            stackView: stackViewMobile
+
+            Column {
+                anchors.fill: parent
+                Repeater {
+                    model: menuModel
+                    delegate: Button {
+                        text: model.title
+                        icon.name: model.iconName
+                        onClicked: {
+                            stackViewMobile.push( Qt.resolvedUrl(model.source) )
+                            mainPageRoot.menuOpen = false
+                        }
+                    }
+                }
+            }
         }
 
         // Overlay for closing menu in mobile mode

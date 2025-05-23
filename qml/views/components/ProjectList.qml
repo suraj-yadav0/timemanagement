@@ -2,9 +2,11 @@ import QtQuick 2.7
 import Lomiri.Components 1.3
 import QtQuick.Controls 2.2
 import QtQuick.Layouts 1.3
+import "../../models/ProjectModel.qml" as ProjectData
 
 Page {
     id: projectListPage
+    ProjectData { id: projectModel }                     // ← correct model import
 
     // Main content
     Column {
@@ -57,12 +59,7 @@ Page {
         
         // Sample project list - replace with your actual data
         Repeater {
-            model: [
-                { name: "Sample Project 1", description: "This is a sample project", status: "Active" },
-                { name: "Sample Project 2", description: "Another sample project", status: "Completed" },
-                { name: "Sample Project 3", description: "Third sample project", status: "In Progress" }
-            ]
-            
+            model: projectModel                            // ← use model
             delegate: ListItem {
                 height: units.gu(8)
                 divider.visible: false
@@ -89,21 +86,21 @@ Page {
                             width: parent.width
                             
                             Label {
-                                text: modelData.name
+                                text: model.name
                                 font.weight: Font.DemiBold
                                 color: theme.palette.normal.backgroundText
                             }
                             
                             Label {
-                                text: "• " + modelData.status
-                                color: modelData.status === "Active" ? "green" : 
-                                       modelData.status === "Completed" ? "blue" : "orange"
+                                text: "• " + model.status
+                                color: model.status === "Active" ? "green" : 
+                                       model.status === "Completed" ? "blue" : "orange"
                                 font.pixelSize: units.gu(1.5)
                             }
                         }
                         
                         Label {
-                            text: modelData.description
+                            text: model.description
                             color: theme.palette.normal.backgroundSecondaryText
                             font.pixelSize: units.gu(1.8)
                             wrapMode: Text.WordWrap
@@ -113,8 +110,11 @@ Page {
                 }
                 
                 onClicked: {
-                    console.log("Project clicked:", modelData.name)
+                    console.log("Project clicked:", model.name)
                     // TODO: Navigate to project details
+                    stackView.push(                   // ← navigate to details
+                    Qt.resolvedUrl("ProjectDetailsPage.qml"),
+                    { project: model } )
                 }
             }
         }
