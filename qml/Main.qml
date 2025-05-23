@@ -23,7 +23,13 @@ MainView {
             }
             
             ListView {
-                anchors.fill: parent
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    bottom: parent.bottom
+                    top: parent.header.bottom
+                    topMargin: units.gu(2) // Adding vertical space between header and list
+                }
                 
                 model: ListModel {
                     ListElement { 
@@ -112,7 +118,13 @@ MainView {
             }
             
             ListView {
-                anchors.fill: parent
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    bottom: parent.bottom
+                    top: parent.header.bottom
+                    topMargin: units.gu(2)
+                }
                 
                 model: ListModel {
                     ListElement { 
@@ -184,7 +196,13 @@ MainView {
             }
             
             ListView {
-                anchors.fill: parent
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    bottom: parent.bottom
+                    top: parent.header.bottom
+                    topMargin: units.gu(2)
+                }
                 
                 model: ListModel {
                     ListElement { 
@@ -404,7 +422,13 @@ MainView {
             }
             
             ListView {
-                anchors.fill: parent
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    bottom: parent.bottom
+                    top: parent.header.bottom
+                    topMargin: units.gu(2)
+                }
                 
                 model: ListModel {
                     ListElement { 
@@ -470,7 +494,13 @@ MainView {
             }
             
             ListView {
-                anchors.fill: parent
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    bottom: parent.bottom
+                    top: parent.header.bottom
+                    topMargin: units.gu(2)
+                }
                 
                 model: ListModel {
                     ListElement { name: "General"; description: "General app settings" }
@@ -1040,7 +1070,13 @@ MainView {
             }
             
             ListView {
-                anchors.fill: parent
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    bottom: parent.bottom
+                    top: parent.header.bottom
+                    topMargin: units.gu(2)
+                }
                 
                 model: ListModel {
                     ListElement { 
@@ -1295,6 +1331,212 @@ MainView {
         }
         
         // LEVEL 3: Settings Detail Pages 
-        // ...existing code...
+         // LEVEL 3: Settings Detail Pages
+        Page {
+            id: generalSettingsPage
+            
+            header: PageHeader {
+                title: i18n.tr('General Settings')
+            }
+            
+            Column {
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    top: parent.top
+                    margins: units.gu(2)
+                }
+                spacing: units.gu(2)
+                
+                ListItem {
+                    ListItemLayout {
+                        title.text: i18n.tr('App Theme')
+                        subtitle.text: i18n.tr('Light or dark theme')
+                        
+                        Switch {
+                            id: themeSwitch
+                            SlotsLayout.position: SlotsLayout.Trailing
+                        }
+                    }
+                }
+                
+                ListItem {
+                    ListItemLayout {
+                        title.text: i18n.tr('Language')
+                        subtitle.text: i18n.tr('App language')
+                        
+                        Label {
+                            text: i18n.tr('English')
+                            SlotsLayout.position: SlotsLayout.Trailing
+                        }
+                    }
+                }
+                
+                ListItem {
+                    ListItemLayout {
+                        title.text: i18n.tr('Auto-save')
+                        subtitle.text: i18n.tr('Automatically save changes')
+                        
+                        Switch {
+                            checked: true
+                            SlotsLayout.position: SlotsLayout.Trailing
+                        }
+                    }
+                }
+            }
+        }
+        
+        Page {
+            id: privacySettingsPage
+            
+            header: PageHeader {
+                title: i18n.tr('Privacy Settings')
+            }
+            
+            Column {
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    top: parent.top
+                    margins: units.gu(2)
+                }
+                spacing: units.gu(2)
+                
+                Label {
+                    text: i18n.tr('Data Collection')
+                    fontSize: "large"
+                    anchors {
+                        left: parent.left
+                        right: parent.right
+                    }
+                }
+                
+                ListItem {
+                    ListItemLayout {
+                        title.text: i18n.tr('Analytics')
+                        subtitle.text: i18n.tr('Help improve the app')
+                        
+                        Switch {
+                            SlotsLayout.position: SlotsLayout.Trailing
+                        }
+                    }
+                }
+                
+                ListItem {
+                    ListItemLayout {
+                        title.text: i18n.tr('Crash Reports')
+                        subtitle.text: i18n.tr('Send crash reports')
+                        
+                        Switch {
+                            checked: true
+                            SlotsLayout.position: SlotsLayout.Trailing
+                        }
+                    }
+                }
+            }
+        }
+        
+        Page {
+            id: notificationSettingsPage
+            
+            header: PageHeader {
+                title: i18n.tr('Notifications')
+            }
+            
+            Column {
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    top: parent.top
+                    margins: units.gu(2)
+                }
+                spacing: units.gu(2)
+                
+                ListItem {
+                    ListItemLayout {
+                        title.text: i18n.tr('Push Notifications')
+                        subtitle.text: i18n.tr('Receive push notifications')
+                        
+                        Switch {
+                            checked: true
+                            SlotsLayout.position: SlotsLayout.Trailing
+                        }
+                    }
+                }
+                
+                ListItem {
+                    ListItemLayout {
+                        title.text: i18n.tr('Sound')
+                        subtitle.text: i18n.tr('Play notification sounds')
+                        
+                        Switch {
+                            checked: true
+                            SlotsLayout.position: SlotsLayout.Trailing
+                        }
+                    }
+                }
+                
+                ListItem {
+                    ListItemLayout {
+                        title.text: i18n.tr('Vibration')
+                        subtitle.text: i18n.tr('Vibrate on notifications')
+                        
+                        Switch {
+                            SlotsLayout.position: SlotsLayout.Trailing
+                        }
+                    }
+                }
+            }
+        }
+        
+        Page {
+            id: aboutPage
+            
+            header: PageHeader {
+                title: i18n.tr('About')
+            }
+            
+            Column {
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    top: parent.top
+                    margins: units.gu(2)
+                }
+                spacing: units.gu(3)
+                
+                // UbuntuShape {
+                //     width: units.gu(10)
+                //     height: units.gu(10)
+                //     anchors.horizontalCenter: parent.horizontalCenter
+                    
+                //     Label {
+                //         anchors.centerIn: parent
+                //         text: "📱"
+                //         fontSize: "x-large"
+                //     }
+                // }
+                
+                Label {
+                    text: i18n.tr('My Ubuntu Touch App')
+                    fontSize: "x-large"
+                    anchors.horizontalCenter: parent.horizontalCenter
+                }
+                
+                Label {
+                    text: i18n.tr('Version 1.0.0')
+                    anchors.horizontalCenter: parent.horizontalCenter
+                }
+                
+                Label {
+                    text: i18n.tr('Built with love using QML and Ubuntu SDK')
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    horizontalAlignment: Text.AlignHCenter
+                    wrapMode: Text.WordWrap
+                    width: parent.width
+                }
+            }
+        }
+        
     }
 }
