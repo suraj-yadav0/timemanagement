@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-23 11:03+0000\n"
+"POT-Creation-Date: 2025-05-23 11:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,59 +17,244 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/views/components/MainPage.qml:39
-#: ../qml/views/components/MainPage.qml:81 timemanagement.desktop.in.h:1
-msgid "Time Management App"
+#: ../qml/Main.qml:22
+msgid "Time Management"
 msgstr ""
 
-#: ../qml/views/components/MainPage.qml:50
-#: ../qml/views/components/MainPage.qml:91
-msgid "Dark Mode"
-msgstr ""
-
-#: ../qml/views/components/MainPage.qml:50
-#: ../qml/views/components/MainPage.qml:91
-msgid "Light Mode"
-msgstr ""
-
-#: ../qml/views/components/MainPage.qml:58
-#: ../qml/views/components/MainPage.qml:99
-msgid "Welcome to the Time Management App!"
-msgstr ""
-
-#: ../qml/views/components/ProjectList.qml:47
-#: ../qml/views/components/SideMenu.qml:91
+#: ../qml/Main.qml:101
 msgid "Projects"
 msgstr ""
 
-#: ../qml/views/components/ProjectList.qml:141
-msgid "No projects yet"
+#: ../qml/Main.qml:106 ../qml/Main.qml:1212
+msgid "New Project"
 msgstr ""
 
-#: ../qml/views/components/ProjectList.qml:148
-msgid "Tap the + button to create your first project"
+#: ../qml/Main.qml:173
+msgid "Time Sheet"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:59
-msgid "MENU"
+#: ../qml/Main.qml:178 ../qml/Main.qml:630
+msgid "Add Time Entry"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:68
-msgid "Home"
-msgstr ""
-
-#: ../qml/views/components/SideMenu.qml:83
+#: ../qml/Main.qml:270
 msgid "Calendar"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:114
-msgid "TimeSheets"
+#: ../qml/Main.qml:275
+msgid "New Event"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:122
+#: ../qml/Main.qml:393
+msgid "Tasks"
+msgstr ""
+
+#: ../qml/Main.qml:398
+msgid "New Task"
+msgstr ""
+
+#: ../qml/Main.qml:469
 msgid "Settings"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:130
-msgid "About"
+#: ../qml/Main.qml:525 ../qml/Main.qml:761 ../qml/Main.qml:949
+msgid "Edit"
+msgstr ""
+
+#: ../qml/Main.qml:542
+msgid "Progress"
+msgstr ""
+
+#: ../qml/Main.qml:558
+msgid "Deadline:"
+msgstr ""
+
+#: ../qml/Main.qml:572
+msgid "Priority:"
+msgstr ""
+
+#: ../qml/Main.qml:588
+msgid "Project Tasks"
+msgstr ""
+
+#: ../qml/Main.qml:635 ../qml/Main.qml:844 ../qml/Main.qml:1095
+#: ../qml/Main.qml:1217
+msgid "Cancel"
+msgstr ""
+
+#: ../qml/Main.qml:645 ../qml/Main.qml:854 ../qml/Main.qml:1105
+#: ../qml/Main.qml:1227
+msgid "Save"
+msgstr ""
+
+#: ../qml/Main.qml:664 ../qml/Main.qml:1136
+msgid "Date"
+msgstr ""
+
+#: ../qml/Main.qml:672
+msgid "Select Date"
+msgstr ""
+
+#: ../qml/Main.qml:677 ../qml/Main.qml:885
+msgid "Project"
+msgstr ""
+
+#: ../qml/Main.qml:690
+msgid "Task"
+msgstr ""
+
+#: ../qml/Main.qml:698
+msgid "Task Description"
+msgstr ""
+
+#: ../qml/Main.qml:710 ../qml/Main.qml:1156
+msgid "Start Time"
+msgstr ""
+
+#: ../qml/Main.qml:715 ../qml/Main.qml:1161
+msgid "9:00 AM"
+msgstr ""
+
+#: ../qml/Main.qml:724 ../qml/Main.qml:1170
+msgid "End Time"
+msgstr ""
+
+#: ../qml/Main.qml:729
+msgid "5:00 PM"
+msgstr ""
+
+#: ../qml/Main.qml:735
+msgid "Notes"
+msgstr ""
+
+#: ../qml/Main.qml:744
+msgid "Additional notes (optional)"
+msgstr ""
+
+#: ../qml/Main.qml:756
+msgid "Time Entry Details"
+msgstr ""
+
+#: ../qml/Main.qml:781
+msgid "Date:"
+msgstr ""
+
+#: ../qml/Main.qml:795 ../qml/Main.qml:983
+msgid "Project:"
+msgstr ""
+
+#: ../qml/Main.qml:809 ../qml/Main.qml:969
+msgid "Task:"
+msgstr ""
+
+#: ../qml/Main.qml:823
+msgid "Hours:"
+msgstr ""
+
+#: ../qml/Main.qml:839
+msgid "Add Task"
+msgstr ""
+
+#: ../qml/Main.qml:873
+msgid "Task Name"
+msgstr ""
+
+#: ../qml/Main.qml:881
+msgid "Enter task name"
+msgstr ""
+
+#: ../qml/Main.qml:898
+msgid "Due Date"
+msgstr ""
+
+#: ../qml/Main.qml:906
+msgid "Select due date"
+msgstr ""
+
+#: ../qml/Main.qml:910 ../qml/Main.qml:1270
+msgid "Priority"
+msgstr ""
+
+#: ../qml/Main.qml:923 ../qml/Main.qml:1193 ../qml/Main.qml:1283
+msgid "Description"
+msgstr ""
+
+#: ../qml/Main.qml:932
+msgid "Task description"
+msgstr ""
+
+#: ../qml/Main.qml:944
+msgid "Task Details"
+msgstr ""
+
+#: ../qml/Main.qml:997
+msgid "Due Date:"
+msgstr ""
+
+#: ../qml/Main.qml:1011
+msgid "Status:"
+msgstr ""
+
+#: ../qml/Main.qml:1016
+msgid "Completed"
+msgstr ""
+
+#: ../qml/Main.qml:1016
+msgid "In Progress"
+msgstr ""
+
+#: ../qml/Main.qml:1034 ../qml/Main.qml:1090
+msgid "Add Event"
+msgstr ""
+
+#: ../qml/Main.qml:1124
+msgid "Event Title"
+msgstr ""
+
+#: ../qml/Main.qml:1132
+msgid "Enter event title"
+msgstr ""
+
+#: ../qml/Main.qml:1144
+msgid "Select date"
+msgstr ""
+
+#: ../qml/Main.qml:1175
+msgid "10:00 AM"
+msgstr ""
+
+#: ../qml/Main.qml:1181
+msgid "Location"
+msgstr ""
+
+#: ../qml/Main.qml:1189
+msgid "Enter location"
+msgstr ""
+
+#: ../qml/Main.qml:1202
+msgid "Event description"
+msgstr ""
+
+#: ../qml/Main.qml:1246
+msgid "Project Name"
+msgstr ""
+
+#: ../qml/Main.qml:1254
+msgid "Enter project name"
+msgstr ""
+
+#: ../qml/Main.qml:1258
+msgid "Deadline"
+msgstr ""
+
+#: ../qml/Main.qml:1266
+msgid "Select deadline"
+msgstr ""
+
+#: ../qml/Main.qml:1292
+msgid "Project description"
+msgstr ""
+
+#: timemanagement.desktop.in.h:1
+msgid "Time Management App"
 msgstr ""
