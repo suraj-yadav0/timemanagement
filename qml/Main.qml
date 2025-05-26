@@ -129,6 +129,11 @@ MainView {
                     case "General":
                         pageLayout.addPageToNextColumn(settingsPage, generalSettingsPage)
                         break
+                    case "Sync":
+                        // Sync settings can be added later
+                        console.warn("Sync settings not implemented yet")
+                        pageLayout.addPageToNextColumn(settingsPage, generalSettingsPage)
+                        break
                     case "Privacy":
                         pageLayout.addPageToNextColumn(settingsPage, privacySettingsPage)
                         break

@@ -7,7 +7,7 @@ QtObject {
         ListElement { 
             name: "Projects"
             description: "Manage your projects" 
-            icon: "folder"
+            icon: "folder-symbolic"
         }
         ListElement { 
             name: "Time Sheet" 
