@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-26 06:37+0000\n"
+"POT-Creation-Date: 2025-05-26 07:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -179,7 +179,7 @@ msgstr ""
 msgid "Save Time Entry"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:7 ../qml/views/ProjectsView.qml:17
+#: ../qml/forms/NewProjectForm.qml:7 ../qml/views/ProjectsView.qml:19
 msgid "New Project"
 msgstr ""
 
@@ -323,6 +323,14 @@ msgstr ""
 msgid "General Settings"
 msgstr ""
 
+#: ../qml/views/MainMenuView.qml:12
+msgid "Dark Mode"
+msgstr ""
+
+#: ../qml/views/MainMenuView.qml:12
+msgid "Light Mode"
+msgstr ""
+
 #: ../qml/views/NotificationSettingsView.qml:7
 msgid "Notification Settings"
 msgstr ""
@@ -413,7 +421,7 @@ msgstr ""
 msgid "View Privacy Policy"
 msgstr ""
 
-#: ../qml/views/ProjectsView.qml:12
+#: ../qml/views/ProjectsView.qml:14
 msgid "Projects"
 msgstr ""
 

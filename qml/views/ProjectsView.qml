@@ -1,5 +1,7 @@
 import QtQuick 2.9
 import Lomiri.Components 1.3
+import "../models"
+import "../components"
 
 Page {
     id: projectsView

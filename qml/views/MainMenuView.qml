@@ -5,6 +5,16 @@ Page {
     id: mainMenuView
     header: PageHeader {
         title: i18n.tr("Time Management")
+
+         trailingActionBar.actions: [
+                    Action {
+                        iconName: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "weather-clear-night" : "weather-clear"
+                        text: theme.name === "Ubuntu.Components.Themes.SuruDark" ? i18n.tr("Light Mode") : i18n.tr("Dark Mode")
+                        onTriggered: {
+                            Theme.name = theme.name === "Ubuntu.Components.Themes.SuruDark" ? "Ubuntu.Components.Themes.Ambiance" : "Ubuntu.Components.Themes.SuruDark";
+                        }
+                    }
+                ]
     }
     
     property var model
