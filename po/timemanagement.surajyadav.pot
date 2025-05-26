@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-26 05:36+0000\n"
+"POT-Creation-Date: 2025-05-26 05:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,8 +17,122 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/views/MainMenuView.qml:11
+#: ../qml/forms/AddEventForm.qml:7 ../qml/views/CalendarView.qml:13
+#: ../qml/views/DayView.qml:12
+msgid "New Event"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:12 ../qml/forms/AddEventForm.qml:145
+msgid "Cancel"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:42
+msgid "Event Title"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:48
+msgid "Enter event title"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:54
+msgid "Date"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:69
+msgid "Time"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:75
+msgid "Select time"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:88
+msgid "Location"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:94
+msgid "Enter location"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:100 ../qml/views/TaskDetailView.qml:112
+#: ../qml/views/TimeEntryDetailView.qml:111
+msgid "Notes"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:107
+msgid "Enter any additional notes"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:116
+msgid "Set Reminder"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:129
+msgid "Save Event"
+msgstr ""
+
+#: ../qml/views/AboutView.qml:7
+msgid "About Time Management"
+msgstr ""
+
+#: ../qml/views/AboutView.qml:40 ../qml/views/MainMenuView.qml:11
 msgid "Time Management"
+msgstr ""
+
+#: ../qml/views/AboutView.qml:48
+msgid "Version 1.0.0"
+msgstr ""
+
+#: ../qml/views/AboutView.qml:64
+msgid ""
+"A comprehensive time management application for professionals and teams."
+msgstr ""
+
+#: ../qml/views/AboutView.qml:74
+msgid "Developed by"
+msgstr ""
+
+#: ../qml/views/AboutView.qml:93
+msgid "Website"
+msgstr ""
+
+#: ../qml/views/AboutView.qml:99
+msgid "GitHub"
+msgstr ""
+
+#: ../qml/views/AboutView.qml:119
+msgid "This application is released under the GNU General Public License v3."
+msgstr ""
+
+#: ../qml/views/AboutView.qml:131
+msgid "Credits"
+msgstr ""
+
+#: ../qml/views/AboutView.qml:139
+msgid ""
+"Icons: Ubuntu Icon Theme\n"
+"Framework: Lomiri/Ubuntu Touch SDK\n"
+"Testing: QA Team"
+msgstr ""
+
+#: ../qml/views/CalendarView.qml:7
+msgid "Calendar"
+msgstr ""
+
+#: ../qml/views/CalendarView.qml:119
+msgid "Today's Events"
+msgstr ""
+
+#: ../qml/views/CalendarView.qml:142
+msgid "No events today"
+msgstr ""
+
+#: ../qml/views/DayView.qml:75
+msgid "No events for this day"
+msgstr ""
+
+#: ../qml/views/DayView.qml:76
+msgid "Add an event to get started"
 msgstr ""
 
 #: ../qml/views/ProjectsView.qml:12
@@ -27,6 +141,106 @@ msgstr ""
 
 #: ../qml/views/ProjectsView.qml:17
 msgid "New Project"
+msgstr ""
+
+#: ../qml/views/SettingsView.qml:7
+msgid "Settings"
+msgstr ""
+
+#: ../qml/views/SettingsView.qml:51
+msgid "Time Management App v1.0"
+msgstr ""
+
+#: ../qml/views/TaskDetailView.qml:7
+msgid "Task Details"
+msgstr ""
+
+#: ../qml/views/TaskDetailView.qml:12 ../qml/views/TimeEntryDetailView.qml:12
+msgid "Edit"
+msgstr ""
+
+#: ../qml/views/TaskDetailView.qml:17 ../qml/views/TimeEntryDetailView.qml:17
+msgid "Delete"
+msgstr ""
+
+#: ../qml/views/TaskDetailView.qml:52
+msgid "Status"
+msgstr ""
+
+#: ../qml/views/TaskDetailView.qml:71
+msgid "Task Name"
+msgstr ""
+
+#: ../qml/views/TaskDetailView.qml:82 ../qml/views/TimeEntryDetailView.qml:75
+msgid "Project"
+msgstr ""
+
+#: ../qml/views/TaskDetailView.qml:93
+msgid "Due Date"
+msgstr ""
+
+#: ../qml/views/TaskDetailView.qml:121
+msgid "No notes available for this task."
+msgstr ""
+
+#: ../qml/views/TaskDetailView.qml:131
+msgid "Related Items"
+msgstr ""
+
+#: ../qml/views/TaskDetailView.qml:141
+msgid "No related items"
+msgstr ""
+
+#: ../qml/views/TasksView.qml:7
+msgid "Tasks"
+msgstr ""
+
+#: ../qml/views/TasksView.qml:12
+msgid "New Task"
+msgstr ""
+
+#: ../qml/views/TasksView.qml:70
+msgid "No tasks"
+msgstr ""
+
+#: ../qml/views/TasksView.qml:71
+msgid "Add your first task to get started"
+msgstr ""
+
+#: ../qml/views/TimeEntryDetailView.qml:7
+msgid "Time Entry Details"
+msgstr ""
+
+#: ../qml/views/TimeEntryDetailView.qml:92
+msgid "Task"
+msgstr ""
+
+#: ../qml/views/TimeEntryDetailView.qml:120
+msgid "No notes available for this time entry."
+msgstr ""
+
+#: ../qml/views/TimeEntryDetailView.qml:129
+msgid "Duplicate"
+msgstr ""
+
+#: ../qml/views/TimeEntryDetailView.qml:137
+msgid "Continue Timer"
+msgstr ""
+
+#: ../qml/views/TimeSheetView.qml:7
+msgid "Time Sheet"
+msgstr ""
+
+#: ../qml/views/TimeSheetView.qml:12
+msgid "New Entry"
+msgstr ""
+
+#: ../qml/views/TimeSheetView.qml:62
+msgid "No time entries"
+msgstr ""
+
+#: ../qml/views/TimeSheetView.qml:63
+msgid "Add your first time entry to start tracking"
 msgstr ""
 
 #: timemanagement.desktop.in.h:1
