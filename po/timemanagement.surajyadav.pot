@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-26 07:13+0000\n"
+"POT-Creation-Date: 2025-05-26 09:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -259,40 +259,40 @@ msgstr ""
 msgid "About Time Management"
 msgstr ""
 
-#: ../qml/views/AboutView.qml:41 ../qml/views/MainMenuView.qml:7
+#: ../qml/views/AboutView.qml:39 ../qml/views/MainMenuView.qml:7
 msgid "Time Management"
 msgstr ""
 
-#: ../qml/views/AboutView.qml:49
+#: ../qml/views/AboutView.qml:47
 msgid "Version 1.0.0"
 msgstr ""
 
-#: ../qml/views/AboutView.qml:65
+#: ../qml/views/AboutView.qml:68
 msgid ""
 "A comprehensive time management application for professionals and teams."
 msgstr ""
 
-#: ../qml/views/AboutView.qml:75
+#: ../qml/views/AboutView.qml:78
 msgid "Developed by"
 msgstr ""
 
-#: ../qml/views/AboutView.qml:94
+#: ../qml/views/AboutView.qml:97
 msgid "Website"
 msgstr ""
 
-#: ../qml/views/AboutView.qml:100
+#: ../qml/views/AboutView.qml:103
 msgid "GitHub"
 msgstr ""
 
-#: ../qml/views/AboutView.qml:120
+#: ../qml/views/AboutView.qml:123
 msgid "This application is released under the GNU General Public License v3."
 msgstr ""
 
-#: ../qml/views/AboutView.qml:132
+#: ../qml/views/AboutView.qml:135
 msgid "Credits"
 msgstr ""
 
-#: ../qml/views/AboutView.qml:140
+#: ../qml/views/AboutView.qml:143
 msgid ""
 "Icons: Ubuntu Icon Theme\n"
 "Framework: Lomiri/Ubuntu Touch SDK\n"
