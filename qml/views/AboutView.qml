@@ -96,13 +96,13 @@ Page {
                 Button {
                     text: i18n.tr("Website")
                     color: UbuntuColors.blue
-                    onClicked: Qt.openUrlExternally("https://example.com")
+                    onClicked: Qt.openUrlExternally("https://suraj-yadav0.github.io/portfolio-v3/")
                 }
 
                 Button {
                     text: i18n.tr("GitHub")
                     color: UbuntuColors.blue
-                    onClicked: Qt.openUrlExternally("https://github.com/example/timemanagement")
+                    onClicked: Qt.openUrlExternally("https://github.com/suraj-yadav0/timemanagement/tree/main")
                 }
             }
 
