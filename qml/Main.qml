@@ -224,4 +224,10 @@ MainView {
             id: aboutPage
         }
     }
+    
+    // Add debugging to check model initialization
+    Component.onCompleted: {
+        console.log("Main component loaded")
+        console.log("Menu items: " + (menuModel ? menuModel.getItemCount() : "not available"))
+    }
 }

@@ -6,29 +6,37 @@ QtObject {
     property ListModel projects: ListModel {
         ListElement { 
             name: "Website Redesign"
-            progress: "75"
-            deadline: "Oct 15, 2023"
+            client: "ABC Company"
+            deadline: "Dec 15, 2023"
+            status: "In Progress"
+            progress: "45"
             priority: "High"
         }
         ListElement { 
             name: "Mobile App Development"
-            progress: "30"
-            deadline: "Dec 1, 2023"
+            client: "XYZ Corp"
+            deadline: "Jan 30, 2024"
+            status: "Not Started"
+            progress: "10"
             priority: "Medium"
         }
         ListElement { 
             name: "Marketing Campaign"
-            progress: "10"
-            deadline: "Nov 20, 2023"
-            priority: "Low"
+            client: "123 Industries"
+            deadline: "Nov 1, 2023"
+            status: "In Progress"
+            progress: "75"
+            priority: "High"
         }
     }
     
     function addProject(projectData) {
         projects.append({
             "name": projectData.name || "",
-            "progress": projectData.progress || "0",
+            "client": projectData.client || "",
             "deadline": projectData.deadline || "",
+            "status": projectData.status || "",
+            "progress": projectData.progress || "0",
             "priority": projectData.priority || "Medium"
         })
     }
@@ -36,8 +44,10 @@ QtObject {
     function updateProject(index, projectData) {
         if (index >= 0 && index < projects.count) {
             projects.setProperty(index, "name", projectData.name)
-            projects.setProperty(index, "progress", projectData.progress)
+            projects.setProperty(index, "client", projectData.client)
             projects.setProperty(index, "deadline", projectData.deadline)
+            projects.setProperty(index, "status", projectData.status)
+            projects.setProperty(index, "progress", projectData.progress)
             projects.setProperty(index, "priority", projectData.priority)
         }
     }

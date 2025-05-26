@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-26 06:23+0000\n"
+"POT-Creation-Date: 2025-05-26 06:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/forms/AddEventForm.qml:7 ../qml/views/CalendarView.qml:13
+#: ../qml/forms/AddEventForm.qml:7 ../qml/views/CalendarView.qml:15
 #: ../qml/views/DayView.qml:12
 msgid "New Event"
 msgstr ""
@@ -259,55 +259,55 @@ msgstr ""
 msgid "About Time Management"
 msgstr ""
 
-#: ../qml/views/AboutView.qml:40 ../qml/views/MainMenuView.qml:11
+#: ../qml/views/AboutView.qml:41 ../qml/views/MainMenuView.qml:7
 msgid "Time Management"
 msgstr ""
 
-#: ../qml/views/AboutView.qml:48
+#: ../qml/views/AboutView.qml:49
 msgid "Version 1.0.0"
 msgstr ""
 
-#: ../qml/views/AboutView.qml:64
+#: ../qml/views/AboutView.qml:65
 msgid ""
 "A comprehensive time management application for professionals and teams."
 msgstr ""
 
-#: ../qml/views/AboutView.qml:74
+#: ../qml/views/AboutView.qml:75
 msgid "Developed by"
 msgstr ""
 
-#: ../qml/views/AboutView.qml:93
+#: ../qml/views/AboutView.qml:94
 msgid "Website"
 msgstr ""
 
-#: ../qml/views/AboutView.qml:99
+#: ../qml/views/AboutView.qml:100
 msgid "GitHub"
 msgstr ""
 
-#: ../qml/views/AboutView.qml:119
+#: ../qml/views/AboutView.qml:120
 msgid "This application is released under the GNU General Public License v3."
 msgstr ""
 
-#: ../qml/views/AboutView.qml:131
+#: ../qml/views/AboutView.qml:132
 msgid "Credits"
 msgstr ""
 
-#: ../qml/views/AboutView.qml:139
+#: ../qml/views/AboutView.qml:140
 msgid ""
 "Icons: Ubuntu Icon Theme\n"
 "Framework: Lomiri/Ubuntu Touch SDK\n"
 "Testing: QA Team"
 msgstr ""
 
-#: ../qml/views/CalendarView.qml:7
+#: ../qml/views/CalendarView.qml:9
 msgid "Calendar"
 msgstr ""
 
-#: ../qml/views/CalendarView.qml:119
+#: ../qml/views/CalendarView.qml:121
 msgid "Today's Events"
 msgstr ""
 
-#: ../qml/views/CalendarView.qml:142
+#: ../qml/views/CalendarView.qml:144
 msgid "No events today"
 msgstr ""
 
@@ -449,19 +449,19 @@ msgstr ""
 msgid "No related items"
 msgstr ""
 
-#: ../qml/views/TasksView.qml:7
+#: ../qml/views/TasksView.qml:9
 msgid "Tasks"
 msgstr ""
 
-#: ../qml/views/TasksView.qml:12
+#: ../qml/views/TasksView.qml:14
 msgid "New Task"
 msgstr ""
 
-#: ../qml/views/TasksView.qml:70
+#: ../qml/views/TasksView.qml:72
 msgid "No tasks"
 msgstr ""
 
-#: ../qml/views/TasksView.qml:71
+#: ../qml/views/TasksView.qml:73
 msgid "Add your first task to get started"
 msgstr ""
 
@@ -481,19 +481,19 @@ msgstr ""
 msgid "Continue Timer"
 msgstr ""
 
-#: ../qml/views/TimeSheetView.qml:9
+#: ../qml/views/TimeSheetView.qml:8
 msgid "Time Sheet"
 msgstr ""
 
-#: ../qml/views/TimeSheetView.qml:14
+#: ../qml/views/TimeSheetView.qml:13
 msgid "New Entry"
 msgstr ""
 
-#: ../qml/views/TimeSheetView.qml:64
+#: ../qml/views/TimeSheetView.qml:63
 msgid "No time entries"
 msgstr ""
 
-#: ../qml/views/TimeSheetView.qml:65
+#: ../qml/views/TimeSheetView.qml:64
 msgid "Add your first time entry to start tracking"
 msgstr ""
 

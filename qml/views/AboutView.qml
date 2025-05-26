@@ -18,12 +18,13 @@ Page {
             width: parent.width
             spacing: units.gu(2)
             
-            // App logo
-            UbuntuShape {
+            // App logo - replacing UbuntuShape with Rectangle
+            Rectangle {
                 width: units.gu(10)
                 height: width
+                radius: width / 2
+                color: UbuntuColors.blue
                 anchors.horizontalCenter: parent.horizontalCenter
-                backgroundColor: UbuntuColors.blue
                 
                 Icon {
                     anchors.centerIn: parent
@@ -39,7 +40,7 @@ Page {
                 width: parent.width
                 text: i18n.tr("Time Management")
                 fontSize: "x-large"
-                fontWeight: Font.Bold
+                //fontWeight: Font.Bold
                 horizontalAlignment: Text.AlignHCenter
             }
             
@@ -130,7 +131,7 @@ Page {
                 width: parent.width
                 text: i18n.tr("Credits")
                 fontSize: "medium"
-                fontWeight: Font.Bold
+                //fontWeight: Font.Bold
                 horizontalAlignment: Text.AlignHCenter
             }
             

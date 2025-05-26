@@ -66,7 +66,7 @@ Page {
             text: i18n.tr("Data Storage")
             fontSize: "large"
             font.bold: true
-            topPadding: units.gu(2)
+            //topPadding: units.gu(2)
         }
         
         Label {

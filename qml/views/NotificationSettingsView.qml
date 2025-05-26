@@ -92,7 +92,7 @@ Page {
             text: i18n.tr("Notification Types")
             fontSize: "large"
             font.bold: true
-            topPadding: units.gu(2)
+           // topPadding: units.gu(2)
             enabled: pushNotificationsSwitch.checked
             opacity: enabled ? 1.0 : 0.5
         }
@@ -161,7 +161,9 @@ Page {
         Label {
             text: i18n.tr("Daily Reminder Time")
             fontSize: "medium"
-            topPadding: units.gu(2)
+           
+           
+           // topPadding: units.gu(2)
             enabled: pushNotificationsSwitch.checked
             opacity: enabled ? 1.0 : 0.5
         }

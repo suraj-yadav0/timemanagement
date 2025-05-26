@@ -1,31 +1,38 @@
 import QtQuick 2.9
 
-ListModel {
+QtObject {
     id: menuModel
     
-    ListElement { 
-        name: "Projects" 
-        description: "Manage your projects"
-        icon: "folder"
+    property ListModel menuItems: ListModel {
+        ListElement { 
+            name: "Projects"
+            description: "Manage your projects" 
+            icon: "folder"
+        }
+        ListElement { 
+            name: "Time Sheet" 
+            description: "Track your time"
+            icon: "clock"
+        }
+        ListElement { 
+            name: "Calendar" 
+            description: "Schedule events"
+            icon: "calendar"
+        }
+        ListElement { 
+            name: "Tasks" 
+            description: "Manage your tasks"
+            icon: "tick"
+        }
+        ListElement { 
+            name: "Settings" 
+            description: "Application settings"
+            icon: "settings"
+        }
     }
-    ListElement { 
-        name: "Time Sheet" 
-        description: "Track your work hours"
-        icon: "clock"
-    }
-    ListElement { 
-        name: "Calendar" 
-        description: "View your schedule"
-        icon: "calendar"
-    }
-    ListElement { 
-        name: "Tasks" 
-        description: "Manage your to-do list"
-        icon: "task"
-    }
-    ListElement { 
-        name: "Settings" 
-        description: "Application settings"
-        icon: "settings"
+    
+    // Debug function to check if model is working
+    function getItemCount() {
+        return menuItems.count
     }
 }
