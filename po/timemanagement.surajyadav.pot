@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-22 08:27+0000\n"
+"POT-Creation-Date: 2025-05-26 09:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,47 +17,494 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/views/MainPage.qml:36 ../qml/views/MainPage.qml:79
-#: timemanagement.desktop.in.h:1
-msgid "Time Management App"
+#: ../qml/forms/AddEventForm.qml:7 ../qml/views/CalendarView.qml:15
+#: ../qml/views/DayView.qml:12
+msgid "New Event"
 msgstr ""
 
-#: ../qml/views/MainPage.qml:48 ../qml/views/MainPage.qml:90
-msgid "Dark Mode"
+#: ../qml/forms/AddEventForm.qml:12 ../qml/forms/AddEventForm.qml:156
+#: ../qml/forms/AddTaskForm.qml:12 ../qml/forms/AddTaskForm.qml:153
+#: ../qml/forms/AddTimeEntryForm.qml:12 ../qml/forms/AddTimeEntryForm.qml:150
+#: ../qml/forms/NewProjectForm.qml:12 ../qml/forms/NewProjectForm.qml:155
+msgid "Cancel"
 msgstr ""
 
-#: ../qml/views/MainPage.qml:48 ../qml/views/MainPage.qml:90
-msgid "Light Mode"
+#: ../qml/forms/AddEventForm.qml:42
+msgid "Event Title"
 msgstr ""
 
-#: ../qml/views/MainPage.qml:57 ../qml/views/MainPage.qml:99
-msgid "Welcome to the Time Management App!"
+#: ../qml/forms/AddEventForm.qml:48
+msgid "Enter event title"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:33
-msgid "MENU"
+#: ../qml/forms/AddEventForm.qml:54 ../qml/forms/AddTimeEntryForm.qml:34
+msgid "Date"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:42
-msgid "Tasks"
+#: ../qml/forms/AddEventForm.qml:69
+msgid "Time"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:49
+#: ../qml/forms/AddEventForm.qml:75 ../qml/forms/AddEventForm.qml:146
+msgid "Select time"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:88
+msgid "Location"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:94
+msgid "Enter location"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:100 ../qml/views/TaskDetailView.qml:112
+#: ../qml/views/TimeEntryDetailView.qml:111
+msgid "Notes"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:107
+msgid "Enter any additional notes"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:116 ../qml/forms/AddTaskForm.qml:120
+msgid "Set Reminder"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:129
+msgid "Attendees"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:135
+msgid "Add attendees (comma separated)"
+msgstr ""
+
+#: ../qml/forms/AddEventForm.qml:140
+msgid "Save Event"
+msgstr ""
+
+#: ../qml/forms/AddTaskForm.qml:7
+msgid "Add Task"
+msgstr ""
+
+#: ../qml/forms/AddTaskForm.qml:37 ../qml/views/TaskDetailView.qml:71
+msgid "Task Name"
+msgstr ""
+
+#: ../qml/forms/AddTaskForm.qml:43
+msgid "Enter task name"
+msgstr ""
+
+#: ../qml/forms/AddTaskForm.qml:48 ../qml/forms/AddTimeEntryForm.qml:48
+#: ../qml/views/TaskDetailView.qml:82 ../qml/views/TimeEntryDetailView.qml:75
+msgid "Project"
+msgstr ""
+
+#: ../qml/forms/AddTaskForm.qml:60 ../qml/views/TaskDetailView.qml:93
+msgid "Due Date"
+msgstr ""
+
+#: ../qml/forms/AddTaskForm.qml:66 ../qml/forms/AddTaskForm.qml:141
+msgid "Select due date"
+msgstr ""
+
+#: ../qml/forms/AddTaskForm.qml:75
+msgid "Priority"
+msgstr ""
+
+#: ../qml/forms/AddTaskForm.qml:82
+msgid "Low"
+msgstr ""
+
+#: ../qml/forms/AddTaskForm.qml:83
+msgid "Medium"
+msgstr ""
+
+#: ../qml/forms/AddTaskForm.qml:84
+msgid "High"
+msgstr ""
+
+#: ../qml/forms/AddTaskForm.qml:85
+msgid "Urgent"
+msgstr ""
+
+#: ../qml/forms/AddTaskForm.qml:92
+msgid "Estimated Hours"
+msgstr ""
+
+#: ../qml/forms/AddTaskForm.qml:104 ../qml/forms/NewProjectForm.qml:111
+msgid "Description"
+msgstr ""
+
+#: ../qml/forms/AddTaskForm.qml:111
+msgid "Enter task description"
+msgstr ""
+
+#: ../qml/forms/AddTaskForm.qml:133
+msgid "Create Task"
+msgstr ""
+
+#: ../qml/forms/AddTimeEntryForm.qml:7
+msgid "Add Time Entry"
+msgstr ""
+
+#: ../qml/forms/AddTimeEntryForm.qml:60 ../qml/views/TimeEntryDetailView.qml:92
+msgid "Task"
+msgstr ""
+
+#: ../qml/forms/AddTimeEntryForm.qml:66
+msgid "What did you work on?"
+msgstr ""
+
+#: ../qml/forms/AddTimeEntryForm.qml:71
+msgid "Hours"
+msgstr ""
+
+#: ../qml/forms/AddTimeEntryForm.qml:87
+msgid "Start Timer"
+msgstr ""
+
+#: ../qml/forms/AddTimeEntryForm.qml:98
+msgid "Notes (Optional)"
+msgstr ""
+
+#: ../qml/forms/AddTimeEntryForm.qml:105
+msgid "Add notes about this time entry"
+msgstr ""
+
+#: ../qml/forms/AddTimeEntryForm.qml:114
+msgid "Billable"
+msgstr ""
+
+#: ../qml/forms/AddTimeEntryForm.qml:128
+msgid "Save Time Entry"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:7 ../qml/views/ProjectsView.qml:19
+msgid "New Project"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:35
+msgid "Project Name"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:41
+msgid "Enter project name"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:46
+msgid "Client"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:52
+msgid "Enter client name"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:57
+msgid "Deadline"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:63 ../qml/forms/NewProjectForm.qml:143
+msgid "Select deadline"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:72
+msgid "Budget"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:89
+msgid "Fixed"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:89
+msgid "Hourly"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:95 ../qml/views/TaskDetailView.qml:52
+msgid "Status"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:102
+msgid "Not Started"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:103
+msgid "In Progress"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:104
+msgid "On Hold"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:105
+msgid "Completed"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:118
+msgid "Enter project description"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:124
+msgid "Team Members"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:130
+msgid "Add team members (comma separated)"
+msgstr ""
+
+#: ../qml/forms/NewProjectForm.qml:135
+msgid "Create Project"
+msgstr ""
+
+#: ../qml/views/AboutView.qml:7
+msgid "About Time Management"
+msgstr ""
+
+#: ../qml/views/AboutView.qml:39 ../qml/views/MainMenuView.qml:7
+msgid "Time Management"
+msgstr ""
+
+#: ../qml/views/AboutView.qml:47
+msgid "Version 1.0.0"
+msgstr ""
+
+#: ../qml/views/AboutView.qml:68
+msgid ""
+"A comprehensive time management application for professionals and teams."
+msgstr ""
+
+#: ../qml/views/AboutView.qml:78
+msgid "Developed by"
+msgstr ""
+
+#: ../qml/views/AboutView.qml:97
+msgid "Website"
+msgstr ""
+
+#: ../qml/views/AboutView.qml:103
+msgid "GitHub"
+msgstr ""
+
+#: ../qml/views/AboutView.qml:123
+msgid "This application is released under the GNU General Public License v3."
+msgstr ""
+
+#: ../qml/views/AboutView.qml:135
+msgid "Credits"
+msgstr ""
+
+#: ../qml/views/AboutView.qml:143
+msgid ""
+"Icons: Ubuntu Icon Theme\n"
+"Framework: Lomiri/Ubuntu Touch SDK\n"
+"Testing: QA Team"
+msgstr ""
+
+#: ../qml/views/CalendarView.qml:9
 msgid "Calendar"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:57
+#: ../qml/views/CalendarView.qml:121
+msgid "Today's Events"
+msgstr ""
+
+#: ../qml/views/CalendarView.qml:144
+msgid "No events today"
+msgstr ""
+
+#: ../qml/views/DayView.qml:75
+msgid "No events for this day"
+msgstr ""
+
+#: ../qml/views/DayView.qml:76
+msgid "Add an event to get started"
+msgstr ""
+
+#: ../qml/views/GeneralSettingsView.qml:7
+msgid "General Settings"
+msgstr ""
+
+#: ../qml/views/MainMenuView.qml:12
+msgid "Dark Mode"
+msgstr ""
+
+#: ../qml/views/MainMenuView.qml:12
+msgid "Light Mode"
+msgstr ""
+
+#: ../qml/views/NotificationSettingsView.qml:7
+msgid "Notification Settings"
+msgstr ""
+
+#: ../qml/views/NotificationSettingsView.qml:26
+msgid "Enable Notifications"
+msgstr ""
+
+#: ../qml/views/NotificationSettingsView.qml:27
+msgid "Turn on/off all notifications"
+msgstr ""
+
+#: ../qml/views/NotificationSettingsView.qml:50
+msgid "Sound"
+msgstr ""
+
+#: ../qml/views/NotificationSettingsView.qml:51
+msgid "Play sound with notifications"
+msgstr ""
+
+#: ../qml/views/NotificationSettingsView.qml:74
+msgid "Vibration"
+msgstr ""
+
+#: ../qml/views/NotificationSettingsView.qml:75
+msgid "Vibrate with notifications"
+msgstr ""
+
+#: ../qml/views/NotificationSettingsView.qml:92
+msgid "Notification Types"
+msgstr ""
+
+#: ../qml/views/NotificationSettingsView.qml:108
+msgid "Task Reminders"
+msgstr ""
+
+#: ../qml/views/NotificationSettingsView.qml:128
+msgid "Calendar Events"
+msgstr ""
+
+#: ../qml/views/NotificationSettingsView.qml:148
+msgid "Project Deadlines"
+msgstr ""
+
+#: ../qml/views/NotificationSettingsView.qml:162
+msgid "Daily Reminder Time"
+msgstr ""
+
+#: ../qml/views/PrivacySettingsView.qml:7
+msgid "Privacy Settings"
+msgstr ""
+
+#: ../qml/views/PrivacySettingsView.qml:26
+msgid "Usage Analytics"
+msgstr ""
+
+#: ../qml/views/PrivacySettingsView.qml:27
+msgid "Help improve the app by sending anonymous usage data"
+msgstr ""
+
+#: ../qml/views/PrivacySettingsView.qml:48
+msgid "Crash Reports"
+msgstr ""
+
+#: ../qml/views/PrivacySettingsView.qml:49
+msgid "Send automatic crash reports to help fix bugs"
+msgstr ""
+
+#: ../qml/views/PrivacySettingsView.qml:66
+msgid "Data Storage"
+msgstr ""
+
+#: ../qml/views/PrivacySettingsView.qml:74
+msgid ""
+"All your data is stored locally on your device and is not shared with any "
+"third parties unless you explicitly choose to enable analytics."
+msgstr ""
+
+#: ../qml/views/PrivacySettingsView.qml:88
+msgid "Clear Cache"
+msgstr ""
+
+#: ../qml/views/PrivacySettingsView.qml:96
+msgid "Reset All Data"
+msgstr ""
+
+#: ../qml/views/PrivacySettingsView.qml:109
+msgid "View Privacy Policy"
+msgstr ""
+
+#: ../qml/views/ProjectsView.qml:14
 msgid "Projects"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:65
-msgid "TimeSheets"
-msgstr ""
-
-#: ../qml/views/components/SideMenu.qml:73
+#: ../qml/views/SettingsView.qml:7
 msgid "Settings"
 msgstr ""
 
-#: ../qml/views/components/SideMenu.qml:81
-msgid "About"
+#: ../qml/views/SettingsView.qml:51
+msgid "Time Management App v1.0"
+msgstr ""
+
+#: ../qml/views/TaskDetailView.qml:7
+msgid "Task Details"
+msgstr ""
+
+#: ../qml/views/TaskDetailView.qml:12 ../qml/views/TimeEntryDetailView.qml:12
+msgid "Edit"
+msgstr ""
+
+#: ../qml/views/TaskDetailView.qml:17 ../qml/views/TimeEntryDetailView.qml:17
+msgid "Delete"
+msgstr ""
+
+#: ../qml/views/TaskDetailView.qml:121
+msgid "No notes available for this task."
+msgstr ""
+
+#: ../qml/views/TaskDetailView.qml:131
+msgid "Related Items"
+msgstr ""
+
+#: ../qml/views/TaskDetailView.qml:141
+msgid "No related items"
+msgstr ""
+
+#: ../qml/views/TasksView.qml:9
+msgid "Tasks"
+msgstr ""
+
+#: ../qml/views/TasksView.qml:14
+msgid "New Task"
+msgstr ""
+
+#: ../qml/views/TasksView.qml:72
+msgid "No tasks"
+msgstr ""
+
+#: ../qml/views/TasksView.qml:73
+msgid "Add your first task to get started"
+msgstr ""
+
+#: ../qml/views/TimeEntryDetailView.qml:7
+msgid "Time Entry Details"
+msgstr ""
+
+#: ../qml/views/TimeEntryDetailView.qml:120
+msgid "No notes available for this time entry."
+msgstr ""
+
+#: ../qml/views/TimeEntryDetailView.qml:129
+msgid "Duplicate"
+msgstr ""
+
+#: ../qml/views/TimeEntryDetailView.qml:137
+msgid "Continue Timer"
+msgstr ""
+
+#: ../qml/views/TimeSheetView.qml:8
+msgid "Time Sheet"
+msgstr ""
+
+#: ../qml/views/TimeSheetView.qml:13
+msgid "New Entry"
+msgstr ""
+
+#: ../qml/views/TimeSheetView.qml:63
+msgid "No time entries"
+msgstr ""
+
+#: ../qml/views/TimeSheetView.qml:64
+msgid "Add your first time entry to start tracking"
+msgstr ""
+
+#: timemanagement.desktop.in.h:1
+msgid "Time Management App"
 msgstr ""
