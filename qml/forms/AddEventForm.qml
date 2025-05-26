@@ -124,6 +124,17 @@ Page {
                 onClicked: reminderSwitch.checked = !reminderSwitch.checked
             }
             
+            // Attendees
+            Label {
+                text: i18n.tr("Attendees")
+            }
+            
+            TextField {
+                id: attendeesField
+                width: parent.width
+                placeholderText: i18n.tr("Add attendees (comma separated)")
+            }
+            
             // Save button
             Button {
                 text: i18n.tr("Save Event")
@@ -132,7 +143,7 @@ Page {
                 
                 onClicked: {
                     saveRequested({
-                        time: timeButton.text,
+                        time: timeButton.text !== i18n.tr("Select time") ? timeButton.text : "",
                         title: titleField.text,
                         location: locationField.text,
                         date: dateButton.text

@@ -2,6 +2,8 @@ import QtQuick 2.9
 import Lomiri.Components 1.3
 import "models"
 import "views"
+import "forms"
+import "components"
 
 MainView {
     id: root
@@ -141,24 +143,24 @@ MainView {
         }
         
         // LEVEL 3: Detail and Form Pages
-        ProjectDetailView {
-            id: projectDetailPage
-        }
+        // ProjectDetailView {
+        //     id: projectDetailPage
+        // }
         
-        TimeEntryDetailView {
-            id: timeEntryDetailPage
-        }
+        // TimeEntryDetailView {
+        //     id: timeEntryDetailPage
+        // }
         
-        TaskDetailView {
-            id: taskDetailPage
-        }
+        // TaskDetailView {
+        //     id: taskDetailPage
+        // }
         
-        DayView {
-            id: dayViewPage
-            onNewEventRequested: {
-                pageLayout.addPageToNextColumn(dayViewPage, addEventPage)
-            }
-        }
+        // DayView {
+        //     id: dayViewPage
+        //     onNewEventRequested: {
+        //         pageLayout.addPageToNextColumn(dayViewPage, addEventPage)
+        //     }
+        // }
         
         // Form Pages
         NewProjectForm {
