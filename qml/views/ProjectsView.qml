@@ -50,7 +50,7 @@ Page {
                     maximumValue: 100
                     value: parseInt(model.progress)
                     width: units.gu(10)
-                    color: "#4CAF50" // <-- Set your desired color here
+                   
                 }
             }
 
