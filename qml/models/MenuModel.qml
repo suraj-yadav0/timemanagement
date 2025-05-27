@@ -25,6 +25,11 @@ QtObject {
             icon: "tick"
         }
         ListElement { 
+            name: "Activities" 
+            description: "Plan your day to day activities"
+            icon: "empty-symbolic"
+        }
+        ListElement { 
             name: "Settings" 
             description: "Application settings"
             icon: "settings"
