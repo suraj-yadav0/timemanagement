@@ -1,4 +1,5 @@
 import QtQuick 2.9
+import QtQuick.Controls 2.5
 import Lomiri.Components 1.3
 import "../models"
 import "../components"
@@ -10,6 +11,8 @@ Page {
 
     signal newProjectRequested()
     signal projectSelected(var projectData)
+    signal deleteProjectRequested(var projectData) // Add signal for delete
+    signal editProjectRequested(var projectData)   // Add signal for edit
 
     header: PageHeader {
         title: i18n.tr('Projects')
@@ -39,6 +42,40 @@ Page {
         delegate: ListItem {
             height: units.gu(10)
 
+            leadingActions: ListItemActions {
+                actions: [
+                    Action {
+                        iconName: "edit"
+                        text: i18n.tr("Edit")
+                        onTriggered: {
+                            projectsView.editProjectRequested({
+                                "name": model.name,
+                                "progress": model.progress,
+                                "deadline": model.deadline,
+                                "priority": model.priority
+                            })
+                        }
+                    }
+                ]
+            }
+
+            trailingActions: ListItemActions {
+                actions: [
+                    Action {
+                        iconName: "delete"
+                        text: i18n.tr("Delete")
+                        onTriggered: {
+                            projectsView.deleteProjectRequested({
+                                "name": model.name,
+                                "progress": model.progress,
+                                "deadline": model.deadline,
+                                "priority": model.priority
+                            })
+                        }
+                    }
+                ]
+            }
+
             ListItemLayout {
                 title.text: model.name
                 subtitle.text: "Due: " + model.deadline
@@ -50,7 +87,6 @@ Page {
                     maximumValue: 100
                     value: parseInt(model.progress)
                     width: units.gu(10)
-                   
                 }
             }
 
@@ -62,6 +98,10 @@ Page {
                     "priority": model.priority
                 })
             }
+
+         
+
+            
         }
     }
 }
