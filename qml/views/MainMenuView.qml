@@ -46,7 +46,9 @@ Page {
                     color: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "#1c355e"
                 }
                 
-                ProgressionSlot {}
+                ProgressionSlot {
+                   color: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "#1c355e"
+                }
             }
             
             onClicked: {
