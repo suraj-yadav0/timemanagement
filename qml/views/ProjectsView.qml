@@ -5,14 +5,15 @@ import "../components"
 
 Page {
     id: projectsView
-    
-    property alias model: listView.model
+
+    property var model
+
     signal newProjectRequested()
     signal projectSelected(var projectData)
-    
+
     header: PageHeader {
         title: i18n.tr('Projects')
-        
+
         trailingActionBar.actions: [
             Action {
                 iconName: "add"
@@ -23,7 +24,7 @@ Page {
             }
         ]
     }
-    
+
     ListView {
         id: listView
         anchors {
@@ -32,26 +33,27 @@ Page {
             bottom: parent.bottom
             top: parent.header.bottom
         }
-        
+
         model: projectsView.model ? projectsView.model.projects : null
-        
+
         delegate: ListItem {
             height: units.gu(10)
-            
+
             ListItemLayout {
                 title.text: model.name
                 subtitle.text: "Due: " + model.deadline
                 summary.text: "Priority: " + model.priority
-                
+
                 ProgressBar {
                     SlotsLayout.position: SlotsLayout.Trailing
                     minimumValue: 0
                     maximumValue: 100
                     value: parseInt(model.progress)
                     width: units.gu(10)
+                    color: "#4CAF50" // <-- Set your desired color here
                 }
             }
-            
+
             onClicked: {
                 projectsView.projectSelected({
                     "name": model.name,
