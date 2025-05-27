@@ -43,7 +43,7 @@ Page {
                     width: units.gu(3)
                     height: width
                     name: icon || "document"
-                    color: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "orange" : "orange"
+                    color: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "#1c355e"
                 }
                 
                 ProgressionSlot {}
