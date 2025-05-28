@@ -1,5 +1,6 @@
 import QtQuick 2.9
 import Lomiri.Components 1.3
+import Lomiri.Components.Themes 1.3
 import "models"
 import "views"
 import "forms"
@@ -12,6 +13,10 @@ MainView {
     
     width: units.gu(60)
     height: units.gu(75)
+
+    //  theme.palette: Palette {
+    //     normal.background:  "#bdc6a0"// Use your desired color
+    // }
     
     // Data Models
     MenuModel {

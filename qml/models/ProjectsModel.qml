@@ -17,7 +17,7 @@ QtObject {
             client: "XYZ Corp"
             deadline: "Jan 30, 2024"
             status: "Not Started"
-            progress: "10"
+            progress: "30"
             priority: "Medium"
         }
         ListElement { 
@@ -25,7 +25,7 @@ QtObject {
             client: "123 Industries"
             deadline: "Nov 1, 2023"
             status: "In Progress"
-            progress: "75"
+            progress: "90"
             priority: "High"
         }
     }
