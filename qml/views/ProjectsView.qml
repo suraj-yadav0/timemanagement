@@ -1,6 +1,8 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.5
 import Lomiri.Components 1.3
+import Ubuntu.Components.Styles 1.3
+
 import "../models"
 import "../components"
 
@@ -9,13 +11,14 @@ Page {
 
     property var model
 
-    signal newProjectRequested()
+    signal newProjectRequested
     signal projectSelected(var projectData)
     signal deleteProjectRequested(var projectData) // Add signal for delete
     signal editProjectRequested(var projectData)   // Add signal for edit
 
     header: PageHeader {
-        
+
+        // color: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#1c355e" : "#fac34d"
         title: i18n.tr('Projects')
 
         trailingActionBar.actions: [
@@ -23,7 +26,7 @@ Page {
                 iconName: "add"
                 text: i18n.tr('New Project')
                 onTriggered: {
-                    projectsView.newProjectRequested()
+                    projectsView.newProjectRequested();
                 }
             }
         ]
@@ -55,7 +58,7 @@ Page {
                                 "progress": model.progress,
                                 "deadline": model.deadline,
                                 "priority": model.priority
-                            })
+                            });
                         }
                     }
                 ]
@@ -72,7 +75,7 @@ Page {
                                 "progress": model.progress,
                                 "deadline": model.deadline,
                                 "priority": model.priority
-                            })
+                            });
                         }
                     }
                 ]
@@ -89,6 +92,8 @@ Page {
                     maximumValue: 100
                     value: parseInt(model.progress)
                     width: units.gu(10)
+
+                    
                 }
             }
 
@@ -98,12 +103,8 @@ Page {
                     "progress": model.progress,
                     "deadline": model.deadline,
                     "priority": model.priority
-                })
+                });
             }
-
-         
-
-            
         }
     }
 
@@ -139,12 +140,13 @@ Page {
         onReleased: {
             var endY = touchPoints[0].y;
             // Detect upward swipe (swipe up: startY > endY)
-            if (startY - endY > units.gu(3)) { // threshold for swipe
+            if (startY - endY > units.gu(3)) {
+                // threshold for swipe
                 projectsView.newProjectRequested();
             }
         }
         z: 999 // Ensure it's above other content
-        // Optional: transparent so it doesn't block UI
+
         Rectangle {
             anchors.fill: parent
             color: "lightgray"

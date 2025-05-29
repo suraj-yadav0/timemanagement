@@ -14,9 +14,9 @@ MainView {
     width: units.gu(60)
     height: units.gu(75)
 
-    //  theme.palette: Palette {
-    //     normal.background:  "#bdc6a0"// Use your desired color
-    // }
+     theme.palette: Palette {
+  
+    }
     
     // Data Models
     MenuModel {

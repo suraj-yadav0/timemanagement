@@ -1,10 +1,13 @@
 import QtQuick 2.9
 import Lomiri.Components 1.3
 
+
 Page {
     id: mainMenuView
     header: PageHeader {
         title: i18n.tr("Time Management")
+
+
 
          trailingActionBar.actions: [
                     Action {
@@ -17,6 +20,7 @@ Page {
                 ]
     }
     
+       
     property var model
     signal itemSelected(string itemName)
     
