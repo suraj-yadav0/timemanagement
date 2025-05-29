@@ -36,6 +36,7 @@ Page {
             bottom: parent.bottom
             top: parent.header.bottom
         }
+        clip: true
 
         model: projectsView.model ? projectsView.model.projects : null
 
