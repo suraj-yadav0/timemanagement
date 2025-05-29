@@ -85,7 +85,7 @@ Page {
             anchors.centerIn: parent
             text: "Time Management v1.0"
             fontSize: "small"
-            color: theme.palette.normal.backgroundTertiaryText
+            color:  theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "#1c355e"
         }
     }
 }
