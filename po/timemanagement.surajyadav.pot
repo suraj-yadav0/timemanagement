@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-29 07:04+0000\n"
+"POT-Creation-Date: 2025-05-29 09:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -179,7 +179,7 @@ msgstr ""
 msgid "Save Time Entry"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:7 ../qml/views/ProjectsView.qml:23
+#: ../qml/forms/NewProjectForm.qml:7 ../qml/views/ProjectsView.qml:31
 msgid "New Project"
 msgstr ""
 
@@ -259,7 +259,7 @@ msgstr ""
 msgid "About Time Management"
 msgstr ""
 
-#: ../qml/views/AboutView.qml:39 ../qml/views/MainMenuView.qml:7
+#: ../qml/views/AboutView.qml:39 ../qml/views/MainMenuView.qml:8
 msgid "Time Management"
 msgstr ""
 
@@ -323,11 +323,11 @@ msgstr ""
 msgid "General Settings"
 msgstr ""
 
-#: ../qml/views/MainMenuView.qml:12
+#: ../qml/views/MainMenuView.qml:19
 msgid "Dark Mode"
 msgstr ""
 
-#: ../qml/views/MainMenuView.qml:12
+#: ../qml/views/MainMenuView.qml:19
 msgid "Light Mode"
 msgstr ""
 
@@ -421,16 +421,16 @@ msgstr ""
 msgid "View Privacy Policy"
 msgstr ""
 
-#: ../qml/views/ProjectsView.qml:18
+#: ../qml/views/ProjectsView.qml:22
 msgid "Projects"
 msgstr ""
 
-#: ../qml/views/ProjectsView.qml:50 ../qml/views/TaskDetailView.qml:12
+#: ../qml/views/ProjectsView.qml:58 ../qml/views/TaskDetailView.qml:12
 #: ../qml/views/TimeEntryDetailView.qml:12
 msgid "Edit"
 msgstr ""
 
-#: ../qml/views/ProjectsView.qml:67 ../qml/views/TaskDetailView.qml:17
+#: ../qml/views/ProjectsView.qml:75 ../qml/views/TaskDetailView.qml:17
 #: ../qml/views/TimeEntryDetailView.qml:17
 msgid "Delete"
 msgstr ""

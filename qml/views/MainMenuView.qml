@@ -1,14 +1,21 @@
 import QtQuick 2.9
 import Lomiri.Components 1.3
 
+
 Page {
     id: mainMenuView
     header: PageHeader {
         title: i18n.tr("Time Management")
+        StyleHints {
+            backgroundColor:  theme.name === "Ubuntu.Components.Themes.SuruDark" ? "black" : "#1c355e"
+		foregroundColor: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "white"
+	}
+
+
 
          trailingActionBar.actions: [
                     Action {
-                        iconName: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "weather-clear-night" : "weather-clear"
+                        iconName: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "weather-clear-night-symbolic" : "weather-clear-symbolic"
                         text: theme.name === "Ubuntu.Components.Themes.SuruDark" ? i18n.tr("Light Mode") : i18n.tr("Dark Mode")
                         onTriggered: {
                             Theme.name = theme.name === "Ubuntu.Components.Themes.SuruDark" ? "Ubuntu.Components.Themes.Ambiance" : "Ubuntu.Components.Themes.SuruDark";
@@ -17,6 +24,7 @@ Page {
                 ]
     }
     
+       
     property var model
     signal itemSelected(string itemName)
     
@@ -78,7 +86,7 @@ Page {
             anchors.centerIn: parent
             text: "Time Management v1.0"
             fontSize: "small"
-            color: theme.palette.normal.backgroundTertiaryText
+            color:  theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "#1c355e"
         }
     }
 }

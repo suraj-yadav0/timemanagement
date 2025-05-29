@@ -14,9 +14,9 @@ MainView {
     width: units.gu(60)
     height: units.gu(75)
 
-    //  theme.palette: Palette {
-    //     normal.background:  "#bdc6a0"// Use your desired color
-    // }
+     theme.palette: Palette {
+  
+    }
     
     // Data Models
     MenuModel {
@@ -50,6 +50,7 @@ MainView {
 
         layouts: [
             PageColumnsLayout {
+                //For Tablet Mode
                 when: width > units.gu(80) && width < units.gu(130)
                 // column #0
                 PageColumn {
@@ -65,6 +66,7 @@ MainView {
                 }
             },
             PageColumnsLayout {
+                //For Desktop Mode
                 when: width >= units.gu(130)
                 // column #0
                 PageColumn {

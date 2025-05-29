@@ -17,7 +17,7 @@ QtObject {
             client: "XYZ Corp"
             deadline: "Jan 30, 2024"
             status: "Not Started"
-            progress: "30"
+            progress: "70"
             priority: "Medium"
         }
         ListElement { 
