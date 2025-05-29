@@ -105,4 +105,34 @@ Page {
             
         }
     }
+
+    // Add swipe-up gesture area at the bottom
+    MultiPointTouchArea {
+        id: swipeUpArea
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        height: units.gu(6)
+        minimumTouchPoints: 1
+        maximumTouchPoints: 1
+
+        property real startY: 0
+
+        onPressed: {
+            startY = touchPoints[0].y;
+        }
+        onReleased: {
+            var endY = touchPoints[0].y;
+            // Detect upward swipe (swipe up: startY > endY)
+            if (startY - endY > units.gu(3)) { // threshold for swipe
+                projectsView.newProjectRequested();
+            }
+        }
+        z: 999 // Ensure it's above other content
+        // Optional: transparent so it doesn't block UI
+        Rectangle {
+            anchors.fill: parent
+            color: "transparent"
+        }
+    }
 }
