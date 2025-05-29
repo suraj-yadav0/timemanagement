@@ -93,7 +93,13 @@ Page {
                     value: parseInt(model.progress)
                     width: units.gu(10)
 
-                    
+                    //For Setting the color of the ProgressBar
+                    Rectangle {
+                        width: parent.width * (parent.value - parent.minimumValue) / (parent.maximumValue - parent.minimumValue)
+                        height: parent.height
+                        color: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "#1c355e"
+                        radius: height / 2
+                    }
                 }
             }
 
