@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-29 08:06+0000\n"
+"POT-Creation-Date: 2025-05-29 08:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -179,7 +179,7 @@ msgstr ""
 msgid "Save Time Entry"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:7 ../qml/views/ProjectsView.qml:23
+#: ../qml/forms/NewProjectForm.qml:7 ../qml/views/ProjectsView.qml:24
 msgid "New Project"
 msgstr ""
 
@@ -421,16 +421,16 @@ msgstr ""
 msgid "View Privacy Policy"
 msgstr ""
 
-#: ../qml/views/ProjectsView.qml:18
+#: ../qml/views/ProjectsView.qml:19
 msgid "Projects"
 msgstr ""
 
-#: ../qml/views/ProjectsView.qml:50 ../qml/views/TaskDetailView.qml:12
+#: ../qml/views/ProjectsView.qml:51 ../qml/views/TaskDetailView.qml:12
 #: ../qml/views/TimeEntryDetailView.qml:12
 msgid "Edit"
 msgstr ""
 
-#: ../qml/views/ProjectsView.qml:67 ../qml/views/TaskDetailView.qml:17
+#: ../qml/views/ProjectsView.qml:68 ../qml/views/TaskDetailView.qml:17
 #: ../qml/views/TimeEntryDetailView.qml:17
 msgid "Delete"
 msgstr ""

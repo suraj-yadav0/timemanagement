@@ -15,6 +15,7 @@ Page {
     signal editProjectRequested(var projectData)   // Add signal for edit
 
     header: PageHeader {
+        
         title: i18n.tr('Projects')
 
         trailingActionBar.actions: [
@@ -112,7 +113,7 @@ Page {
         width: units.gu(6)
         height: units.gu(0.7)
         radius: height / 2
-        color: "#cccccc"
+        color: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "#1c355e"
         opacity: 0.7
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.bottom: swipeUpArea.top
@@ -120,7 +121,7 @@ Page {
         z: 1000
     }
 
-    // Add swipe-up gesture area at the bottom
+    // Add Projects swipe-up gesture area at the bottom
     MultiPointTouchArea {
         id: swipeUpArea
         anchors.left: parent.left
@@ -146,7 +147,8 @@ Page {
         // Optional: transparent so it doesn't block UI
         Rectangle {
             anchors.fill: parent
-            color: "transparent"
+            color: "lightgray"
+            opacity: 0.0// Make it invisible but still interactive
         }
     }
 }
