@@ -36,7 +36,7 @@ Page {
             bottom: parent.bottom
             top: parent.header.bottom
         }
-        clip: true
+        clip: true // Solves the Overlay Error of the ListView while Swiping
 
         model: projectsView.model ? projectsView.model.projects : null
 

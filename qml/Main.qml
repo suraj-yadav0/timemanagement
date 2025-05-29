@@ -50,6 +50,7 @@ MainView {
 
         layouts: [
             PageColumnsLayout {
+                //For Tablet Mode
                 when: width > units.gu(80) && width < units.gu(130)
                 // column #0
                 PageColumn {
@@ -65,6 +66,7 @@ MainView {
                 }
             },
             PageColumnsLayout {
+                //For Desktop Mode
                 when: width >= units.gu(130)
                 // column #0
                 PageColumn {
