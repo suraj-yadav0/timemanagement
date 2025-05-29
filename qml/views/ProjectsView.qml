@@ -106,6 +106,20 @@ Page {
         }
     }
 
+    // Visible swipe-up indicator
+    Rectangle {
+        id: swipeIndicator
+        width: units.gu(6)
+        height: units.gu(0.7)
+        radius: height / 2
+        color: "#cccccc"
+        opacity: 0.7
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.bottom: swipeUpArea.top
+        anchors.bottomMargin: units.gu(0.5)
+        z: 1000
+    }
+
     // Add swipe-up gesture area at the bottom
     MultiPointTouchArea {
         id: swipeUpArea
