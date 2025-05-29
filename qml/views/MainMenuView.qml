@@ -6,6 +6,9 @@ Page {
     id: mainMenuView
     header: PageHeader {
         title: i18n.tr("Time Management")
+        StyleHints {
+		foregroundColor: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "#1c355e"
+	}
 
 
 
