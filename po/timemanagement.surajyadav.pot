@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-29 04:51+0000\n"
+"POT-Creation-Date: 2025-05-29 07:04+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -425,12 +425,12 @@ msgstr ""
 msgid "Projects"
 msgstr ""
 
-#: ../qml/views/ProjectsView.qml:49 ../qml/views/TaskDetailView.qml:12
+#: ../qml/views/ProjectsView.qml:50 ../qml/views/TaskDetailView.qml:12
 #: ../qml/views/TimeEntryDetailView.qml:12
 msgid "Edit"
 msgstr ""
 
-#: ../qml/views/ProjectsView.qml:66 ../qml/views/TaskDetailView.qml:17
+#: ../qml/views/ProjectsView.qml:67 ../qml/views/TaskDetailView.qml:17
 #: ../qml/views/TimeEntryDetailView.qml:17
 msgid "Delete"
 msgstr ""
