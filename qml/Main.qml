@@ -47,6 +47,43 @@ MainView {
         id: pageLayout
         anchors.fill: parent
         primaryPage: mainPage
+
+        layouts: [
+            PageColumnsLayout {
+                when: width > units.gu(80) && width < units.gu(130)
+                // column #0
+                PageColumn {
+                    minimumWidth: units.gu(30)
+                    maximumWidth: units.gu(50)
+                    preferredWidth: width > units.gu(90) ? units.gu(20) : units.gu(15)
+                }
+                // column #1
+                PageColumn {
+                    minimumWidth: units.gu(50)
+                    maximumWidth: units.gu(80)
+                    preferredWidth: width > units.gu(90) ? units.gu(60) : units.gu(45)
+                }
+            },
+            PageColumnsLayout {
+                when: width >= units.gu(130)
+                // column #0
+                PageColumn {
+                    minimumWidth: units.gu(30)
+                    maximumWidth: units.gu(50)
+                    preferredWidth: units.gu(40)
+                }
+                // column #1
+                PageColumn {
+                    minimumWidth: units.gu(65)
+                    maximumWidth: units.gu(80)
+                    preferredWidth: units.gu(50)
+                }
+                // column #2
+                PageColumn {
+                    fillWidth: true
+                }
+            }
+        ]
         
         // LEVEL 1: Main Menu
         MainMenuView {
