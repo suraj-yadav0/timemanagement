@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-29 09:26+0000\n"
+"POT-Creation-Date: 2025-05-29 09:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,7 +58,7 @@ msgid "Enter location"
 msgstr ""
 
 #: ../qml/forms/AddEventForm.qml:100 ../qml/views/TaskDetailView.qml:112
-#: ../qml/views/TimeEntryDetailView.qml:111
+#: ../qml/views/TimeEntryDetailView.qml:115
 msgid "Notes"
 msgstr ""
 
@@ -95,7 +95,7 @@ msgid "Enter task name"
 msgstr ""
 
 #: ../qml/forms/AddTaskForm.qml:48 ../qml/forms/AddTimeEntryForm.qml:48
-#: ../qml/views/TaskDetailView.qml:82 ../qml/views/TimeEntryDetailView.qml:75
+#: ../qml/views/TaskDetailView.qml:82 ../qml/views/TimeEntryDetailView.qml:79
 msgid "Project"
 msgstr ""
 
@@ -147,7 +147,7 @@ msgstr ""
 msgid "Add Time Entry"
 msgstr ""
 
-#: ../qml/forms/AddTimeEntryForm.qml:60 ../qml/views/TimeEntryDetailView.qml:92
+#: ../qml/forms/AddTimeEntryForm.qml:60 ../qml/views/TimeEntryDetailView.qml:96
 msgid "Task"
 msgstr ""
 
@@ -426,12 +426,12 @@ msgid "Projects"
 msgstr ""
 
 #: ../qml/views/ProjectsView.qml:58 ../qml/views/TaskDetailView.qml:12
-#: ../qml/views/TimeEntryDetailView.qml:12
+#: ../qml/views/TimeEntryDetailView.qml:16
 msgid "Edit"
 msgstr ""
 
 #: ../qml/views/ProjectsView.qml:75 ../qml/views/TaskDetailView.qml:17
-#: ../qml/views/TimeEntryDetailView.qml:17
+#: ../qml/views/TimeEntryDetailView.qml:21
 msgid "Delete"
 msgstr ""
 
@@ -439,7 +439,7 @@ msgstr ""
 msgid "Settings"
 msgstr ""
 
-#: ../qml/views/SettingsView.qml:51
+#: ../qml/views/SettingsView.qml:55
 msgid "Time Management App v1.0"
 msgstr ""
 
@@ -463,15 +463,15 @@ msgstr ""
 msgid "Tasks"
 msgstr ""
 
-#: ../qml/views/TasksView.qml:14
+#: ../qml/views/TasksView.qml:18
 msgid "New Task"
 msgstr ""
 
-#: ../qml/views/TasksView.qml:72
+#: ../qml/views/TasksView.qml:76
 msgid "No tasks"
 msgstr ""
 
-#: ../qml/views/TasksView.qml:73
+#: ../qml/views/TasksView.qml:77
 msgid "Add your first task to get started"
 msgstr ""
 
@@ -479,15 +479,15 @@ msgstr ""
 msgid "Time Entry Details"
 msgstr ""
 
-#: ../qml/views/TimeEntryDetailView.qml:120
+#: ../qml/views/TimeEntryDetailView.qml:124
 msgid "No notes available for this time entry."
 msgstr ""
 
-#: ../qml/views/TimeEntryDetailView.qml:129
+#: ../qml/views/TimeEntryDetailView.qml:133
 msgid "Duplicate"
 msgstr ""
 
-#: ../qml/views/TimeEntryDetailView.qml:137
+#: ../qml/views/TimeEntryDetailView.qml:141
 msgid "Continue Timer"
 msgstr ""
 
@@ -495,15 +495,15 @@ msgstr ""
 msgid "Time Sheet"
 msgstr ""
 
-#: ../qml/views/TimeSheetView.qml:13
+#: ../qml/views/TimeSheetView.qml:17
 msgid "New Entry"
 msgstr ""
 
-#: ../qml/views/TimeSheetView.qml:63
+#: ../qml/views/TimeSheetView.qml:67
 msgid "No time entries"
 msgstr ""
 
-#: ../qml/views/TimeSheetView.qml:64
+#: ../qml/views/TimeSheetView.qml:68
 msgid "Add your first time entry to start tracking"
 msgstr ""
 

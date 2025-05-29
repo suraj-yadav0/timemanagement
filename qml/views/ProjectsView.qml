@@ -21,10 +21,10 @@ Page {
         // color: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#1c355e" : "#fac34d"
         title: i18n.tr('Projects')
 
-        StyleHints {
-		foregroundColor: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "#1c355e"
+       StyleHints {
+            backgroundColor:  theme.name === "Ubuntu.Components.Themes.SuruDark" ? "black" : "#1c355e"
+		foregroundColor: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "white"
 	}
-
         trailingActionBar.actions: [
             Action {
                 iconName: "add"

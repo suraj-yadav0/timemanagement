@@ -5,6 +5,10 @@ Page {
     id: timeEntryDetailView
     header: PageHeader {
         title: i18n.tr("Time Entry Details")
+           StyleHints {
+            backgroundColor:  theme.name === "Ubuntu.Components.Themes.SuruDark" ? "black" : "#1c355e"
+		foregroundColor: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "white"
+	}
         trailingActionBar {
             actions: [
                 Action {
