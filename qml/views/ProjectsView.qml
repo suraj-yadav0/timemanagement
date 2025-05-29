@@ -54,23 +54,6 @@ Page {
             leadingActions: ListItemActions {
                 actions: [
                     Action {
-                        iconName: "edit"
-                        text: i18n.tr("Edit")
-                        onTriggered: {
-                            projectsView.editProjectRequested({
-                                "name": model.name,
-                                "progress": model.progress,
-                                "deadline": model.deadline,
-                                "priority": model.priority
-                            });
-                        }
-                    }
-                ]
-            }
-
-            trailingActions: ListItemActions {
-                actions: [
-                    Action {
                         iconName: "delete"
                         text: i18n.tr("Delete")
                         onTriggered: {
@@ -83,6 +66,23 @@ Page {
                         }
                     }
                 ]
+            }
+
+            trailingActions:ListItemActions {
+                actions: [
+                    Action {
+                        iconName: "edit"
+                        text: i18n.tr("Edit")
+                        onTriggered: {
+                            projectsView.editProjectRequested({
+                                "name": model.name,
+                                "progress": model.progress,
+                                "deadline": model.deadline,
+                                "priority": model.priority
+                            });
+                        }
+                    }
+                ] 
             }
 
             ListItemLayout {

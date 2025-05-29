@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-29 09:36+0000\n"
+"POT-Creation-Date: 2025-05-29 09:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,63 +22,63 @@ msgstr ""
 msgid "New Event"
 msgstr ""
 
-#: ../qml/forms/AddEventForm.qml:12 ../qml/forms/AddEventForm.qml:156
-#: ../qml/forms/AddTaskForm.qml:12 ../qml/forms/AddTaskForm.qml:153
-#: ../qml/forms/AddTimeEntryForm.qml:12 ../qml/forms/AddTimeEntryForm.qml:150
-#: ../qml/forms/NewProjectForm.qml:12 ../qml/forms/NewProjectForm.qml:155
+#: ../qml/forms/AddEventForm.qml:16 ../qml/forms/AddEventForm.qml:160
+#: ../qml/forms/AddTaskForm.qml:16 ../qml/forms/AddTaskForm.qml:157
+#: ../qml/forms/AddTimeEntryForm.qml:16 ../qml/forms/AddTimeEntryForm.qml:154
+#: ../qml/forms/NewProjectForm.qml:16 ../qml/forms/NewProjectForm.qml:159
 msgid "Cancel"
 msgstr ""
 
-#: ../qml/forms/AddEventForm.qml:42
+#: ../qml/forms/AddEventForm.qml:46
 msgid "Event Title"
 msgstr ""
 
-#: ../qml/forms/AddEventForm.qml:48
+#: ../qml/forms/AddEventForm.qml:52
 msgid "Enter event title"
 msgstr ""
 
-#: ../qml/forms/AddEventForm.qml:54 ../qml/forms/AddTimeEntryForm.qml:34
+#: ../qml/forms/AddEventForm.qml:58 ../qml/forms/AddTimeEntryForm.qml:38
 msgid "Date"
 msgstr ""
 
-#: ../qml/forms/AddEventForm.qml:69
+#: ../qml/forms/AddEventForm.qml:73
 msgid "Time"
 msgstr ""
 
-#: ../qml/forms/AddEventForm.qml:75 ../qml/forms/AddEventForm.qml:146
+#: ../qml/forms/AddEventForm.qml:79 ../qml/forms/AddEventForm.qml:150
 msgid "Select time"
 msgstr ""
 
-#: ../qml/forms/AddEventForm.qml:88
+#: ../qml/forms/AddEventForm.qml:92
 msgid "Location"
 msgstr ""
 
-#: ../qml/forms/AddEventForm.qml:94
+#: ../qml/forms/AddEventForm.qml:98
 msgid "Enter location"
 msgstr ""
 
-#: ../qml/forms/AddEventForm.qml:100 ../qml/views/TaskDetailView.qml:112
+#: ../qml/forms/AddEventForm.qml:104 ../qml/views/TaskDetailView.qml:112
 #: ../qml/views/TimeEntryDetailView.qml:115
 msgid "Notes"
 msgstr ""
 
-#: ../qml/forms/AddEventForm.qml:107
+#: ../qml/forms/AddEventForm.qml:111
 msgid "Enter any additional notes"
 msgstr ""
 
-#: ../qml/forms/AddEventForm.qml:116 ../qml/forms/AddTaskForm.qml:120
+#: ../qml/forms/AddEventForm.qml:120 ../qml/forms/AddTaskForm.qml:124
 msgid "Set Reminder"
 msgstr ""
 
-#: ../qml/forms/AddEventForm.qml:129
+#: ../qml/forms/AddEventForm.qml:133
 msgid "Attendees"
 msgstr ""
 
-#: ../qml/forms/AddEventForm.qml:135
+#: ../qml/forms/AddEventForm.qml:139
 msgid "Add attendees (comma separated)"
 msgstr ""
 
-#: ../qml/forms/AddEventForm.qml:140
+#: ../qml/forms/AddEventForm.qml:144
 msgid "Save Event"
 msgstr ""
 
@@ -86,60 +86,60 @@ msgstr ""
 msgid "Add Task"
 msgstr ""
 
-#: ../qml/forms/AddTaskForm.qml:37 ../qml/views/TaskDetailView.qml:71
+#: ../qml/forms/AddTaskForm.qml:41 ../qml/views/TaskDetailView.qml:71
 msgid "Task Name"
 msgstr ""
 
-#: ../qml/forms/AddTaskForm.qml:43
+#: ../qml/forms/AddTaskForm.qml:47
 msgid "Enter task name"
 msgstr ""
 
-#: ../qml/forms/AddTaskForm.qml:48 ../qml/forms/AddTimeEntryForm.qml:48
+#: ../qml/forms/AddTaskForm.qml:52 ../qml/forms/AddTimeEntryForm.qml:52
 #: ../qml/views/TaskDetailView.qml:82 ../qml/views/TimeEntryDetailView.qml:79
 msgid "Project"
 msgstr ""
 
-#: ../qml/forms/AddTaskForm.qml:60 ../qml/views/TaskDetailView.qml:93
+#: ../qml/forms/AddTaskForm.qml:64 ../qml/views/TaskDetailView.qml:93
 msgid "Due Date"
 msgstr ""
 
-#: ../qml/forms/AddTaskForm.qml:66 ../qml/forms/AddTaskForm.qml:141
+#: ../qml/forms/AddTaskForm.qml:70 ../qml/forms/AddTaskForm.qml:145
 msgid "Select due date"
 msgstr ""
 
-#: ../qml/forms/AddTaskForm.qml:75
+#: ../qml/forms/AddTaskForm.qml:79
 msgid "Priority"
 msgstr ""
 
-#: ../qml/forms/AddTaskForm.qml:82
+#: ../qml/forms/AddTaskForm.qml:86
 msgid "Low"
 msgstr ""
 
-#: ../qml/forms/AddTaskForm.qml:83
+#: ../qml/forms/AddTaskForm.qml:87
 msgid "Medium"
 msgstr ""
 
-#: ../qml/forms/AddTaskForm.qml:84
+#: ../qml/forms/AddTaskForm.qml:88
 msgid "High"
 msgstr ""
 
-#: ../qml/forms/AddTaskForm.qml:85
+#: ../qml/forms/AddTaskForm.qml:89
 msgid "Urgent"
 msgstr ""
 
-#: ../qml/forms/AddTaskForm.qml:92
+#: ../qml/forms/AddTaskForm.qml:96
 msgid "Estimated Hours"
 msgstr ""
 
-#: ../qml/forms/AddTaskForm.qml:104 ../qml/forms/NewProjectForm.qml:111
+#: ../qml/forms/AddTaskForm.qml:108 ../qml/forms/NewProjectForm.qml:115
 msgid "Description"
 msgstr ""
 
-#: ../qml/forms/AddTaskForm.qml:111
+#: ../qml/forms/AddTaskForm.qml:115
 msgid "Enter task description"
 msgstr ""
 
-#: ../qml/forms/AddTaskForm.qml:133
+#: ../qml/forms/AddTaskForm.qml:137
 msgid "Create Task"
 msgstr ""
 
@@ -147,35 +147,35 @@ msgstr ""
 msgid "Add Time Entry"
 msgstr ""
 
-#: ../qml/forms/AddTimeEntryForm.qml:60 ../qml/views/TimeEntryDetailView.qml:96
+#: ../qml/forms/AddTimeEntryForm.qml:64 ../qml/views/TimeEntryDetailView.qml:96
 msgid "Task"
 msgstr ""
 
-#: ../qml/forms/AddTimeEntryForm.qml:66
+#: ../qml/forms/AddTimeEntryForm.qml:70
 msgid "What did you work on?"
 msgstr ""
 
-#: ../qml/forms/AddTimeEntryForm.qml:71
+#: ../qml/forms/AddTimeEntryForm.qml:75
 msgid "Hours"
 msgstr ""
 
-#: ../qml/forms/AddTimeEntryForm.qml:87
+#: ../qml/forms/AddTimeEntryForm.qml:91
 msgid "Start Timer"
 msgstr ""
 
-#: ../qml/forms/AddTimeEntryForm.qml:98
+#: ../qml/forms/AddTimeEntryForm.qml:102
 msgid "Notes (Optional)"
 msgstr ""
 
-#: ../qml/forms/AddTimeEntryForm.qml:105
+#: ../qml/forms/AddTimeEntryForm.qml:109
 msgid "Add notes about this time entry"
 msgstr ""
 
-#: ../qml/forms/AddTimeEntryForm.qml:114
+#: ../qml/forms/AddTimeEntryForm.qml:118
 msgid "Billable"
 msgstr ""
 
-#: ../qml/forms/AddTimeEntryForm.qml:128
+#: ../qml/forms/AddTimeEntryForm.qml:132
 msgid "Save Time Entry"
 msgstr ""
 
@@ -183,75 +183,75 @@ msgstr ""
 msgid "New Project"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:35
+#: ../qml/forms/NewProjectForm.qml:39
 msgid "Project Name"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:41
+#: ../qml/forms/NewProjectForm.qml:45
 msgid "Enter project name"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:46
+#: ../qml/forms/NewProjectForm.qml:50
 msgid "Client"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:52
+#: ../qml/forms/NewProjectForm.qml:56
 msgid "Enter client name"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:57
+#: ../qml/forms/NewProjectForm.qml:61
 msgid "Deadline"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:63 ../qml/forms/NewProjectForm.qml:143
+#: ../qml/forms/NewProjectForm.qml:67 ../qml/forms/NewProjectForm.qml:147
 msgid "Select deadline"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:72
+#: ../qml/forms/NewProjectForm.qml:76
 msgid "Budget"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:89
+#: ../qml/forms/NewProjectForm.qml:93
 msgid "Fixed"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:89
+#: ../qml/forms/NewProjectForm.qml:93
 msgid "Hourly"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:95 ../qml/views/TaskDetailView.qml:52
+#: ../qml/forms/NewProjectForm.qml:99 ../qml/views/TaskDetailView.qml:52
 msgid "Status"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:102
+#: ../qml/forms/NewProjectForm.qml:106
 msgid "Not Started"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:103
+#: ../qml/forms/NewProjectForm.qml:107
 msgid "In Progress"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:104
+#: ../qml/forms/NewProjectForm.qml:108
 msgid "On Hold"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:105
+#: ../qml/forms/NewProjectForm.qml:109
 msgid "Completed"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:118
+#: ../qml/forms/NewProjectForm.qml:122
 msgid "Enter project description"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:124
+#: ../qml/forms/NewProjectForm.qml:128
 msgid "Team Members"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:130
+#: ../qml/forms/NewProjectForm.qml:134
 msgid "Add team members (comma separated)"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:135
+#: ../qml/forms/NewProjectForm.qml:139
 msgid "Create Project"
 msgstr ""
 
@@ -425,14 +425,14 @@ msgstr ""
 msgid "Projects"
 msgstr ""
 
-#: ../qml/views/ProjectsView.qml:58 ../qml/views/TaskDetailView.qml:12
-#: ../qml/views/TimeEntryDetailView.qml:16
-msgid "Edit"
-msgstr ""
-
-#: ../qml/views/ProjectsView.qml:75 ../qml/views/TaskDetailView.qml:17
+#: ../qml/views/ProjectsView.qml:58 ../qml/views/TaskDetailView.qml:17
 #: ../qml/views/TimeEntryDetailView.qml:21
 msgid "Delete"
+msgstr ""
+
+#: ../qml/views/ProjectsView.qml:75 ../qml/views/TaskDetailView.qml:12
+#: ../qml/views/TimeEntryDetailView.qml:16
+msgid "Edit"
 msgstr ""
 
 #: ../qml/views/SettingsView.qml:7
