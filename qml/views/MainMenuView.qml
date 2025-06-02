@@ -117,7 +117,7 @@ Page {
         Rectangle {
             anchors.fill: parent
             color: "lightgray"
-            opacity: 0.1// Make it invisible but still interactive
+            opacity: 0.0// Make it invisible but still interactive
         }
     }
     
