@@ -152,7 +152,8 @@ Page {
             // Detect upward swipe (swipe up: startY > endY)
             if (startY - endY > units.gu(3)) {
                 // threshold for swipe
-                projectsView.newProjectRequested();
+               // taskView.newTaskRequested()
+               projectsView.newProjectRequested();
             }
         }
         z: 999 // Ensure it's above other content
