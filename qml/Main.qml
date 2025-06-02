@@ -107,6 +107,8 @@ MainView {
                         break
                     case "Settings":
                         pageLayout.addPageToNextColumn(mainPage, settingsPage)
+                    case "New Time Entry":
+                        pageLayout.addPageToNextColumn(mainPage, addTimeEntryPage)
                         break
                 }
             }

@@ -5,6 +5,10 @@ Page {
     id: settingsView
     header: PageHeader {
         title: i18n.tr("Settings")
+           StyleHints {
+            backgroundColor:  theme.name === "Ubuntu.Components.Themes.SuruDark" ? "black" : "#1c355e"
+		foregroundColor: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "white"
+	}
     }
     
     property var model

@@ -21,10 +21,10 @@ Page {
         // color: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#1c355e" : "#fac34d"
         title: i18n.tr('Projects')
 
-        StyleHints {
-		foregroundColor: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "#1c355e"
+       StyleHints {
+            backgroundColor:  theme.name === "Ubuntu.Components.Themes.SuruDark" ? "black" : "#1c355e"
+		foregroundColor: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "white"
 	}
-
         trailingActionBar.actions: [
             Action {
                 iconName: "add"
@@ -54,23 +54,6 @@ Page {
             leadingActions: ListItemActions {
                 actions: [
                     Action {
-                        iconName: "edit"
-                        text: i18n.tr("Edit")
-                        onTriggered: {
-                            projectsView.editProjectRequested({
-                                "name": model.name,
-                                "progress": model.progress,
-                                "deadline": model.deadline,
-                                "priority": model.priority
-                            });
-                        }
-                    }
-                ]
-            }
-
-            trailingActions: ListItemActions {
-                actions: [
-                    Action {
                         iconName: "delete"
                         text: i18n.tr("Delete")
                         onTriggered: {
@@ -83,6 +66,23 @@ Page {
                         }
                     }
                 ]
+            }
+
+            trailingActions:ListItemActions {
+                actions: [
+                    Action {
+                        iconName: "edit"
+                        text: i18n.tr("Edit")
+                        onTriggered: {
+                            projectsView.editProjectRequested({
+                                "name": model.name,
+                                "progress": model.progress,
+                                "deadline": model.deadline,
+                                "priority": model.priority
+                            });
+                        }
+                    }
+                ] 
             }
 
             ListItemLayout {
@@ -152,7 +152,8 @@ Page {
             // Detect upward swipe (swipe up: startY > endY)
             if (startY - endY > units.gu(3)) {
                 // threshold for swipe
-                projectsView.newProjectRequested();
+               // taskView.newTaskRequested()
+               projectsView.newProjectRequested();
             }
         }
         z: 999 // Ensure it's above other content

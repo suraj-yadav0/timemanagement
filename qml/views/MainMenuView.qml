@@ -1,5 +1,8 @@
 import QtQuick 2.9
 import Lomiri.Components 1.3
+import"../components"
+import "../models"
+import "../forms"
 
 
 Page {
@@ -27,6 +30,7 @@ Page {
        
     property var model
     signal itemSelected(string itemName)
+        signal newTimeEntryRequested()
     
     ListView {
         id: menuListView
@@ -69,6 +73,53 @@ Page {
             console.log("MainMenuView loaded, model items: " + 
                       (mainMenuView.model && mainMenuView.model.menuItems ? 
                        mainMenuView.model.menuItems.count : "none"))
+        }
+    }
+
+     // Visible swipe-up indicator
+    Rectangle {
+        id: swipeIndicator
+        width: units.gu(6)
+        height: units.gu(0.7)
+        radius: height / 2
+        color: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "#1c355e"
+        opacity: 0.7
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.bottom: swipeUpArea.top
+        anchors.bottomMargin: units.gu(0.5)
+        z: 1000
+    }
+
+
+    MultiPointTouchArea {
+        id: swipeUpArea
+        anchors.left: parent.left
+        anchors.right: parent.right
+        anchors.bottom: parent.bottom
+        height: units.gu(6)
+        minimumTouchPoints: 1
+        maximumTouchPoints: 1
+
+        property real startY: 0
+
+        onPressed: {
+            startY = touchPoints[0].y;
+        }
+        onReleased: {
+            var endY = touchPoints[0].y;
+            // Detect upward swipe (swipe up: startY > endY)
+            if (startY - endY > units.gu(3)) {
+                // threshold for swipe
+                
+            mainMenuView.itemSelected("New Time Entry");
+            }
+        }
+        z: 999 // Ensure it's above other content
+
+        Rectangle {
+            anchors.fill: parent
+            color: "lightgray"
+            opacity: 0.1// Make it invisible but still interactive
         }
     }
     
