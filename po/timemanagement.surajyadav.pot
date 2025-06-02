@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: timemanagement.surajyadav\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-02 06:34+0000\n"
+"POT-Creation-Date: 2025-06-02 06:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgstr ""
 #: ../qml/forms/AddEventForm.qml:16 ../qml/forms/AddEventForm.qml:160
 #: ../qml/forms/AddTaskForm.qml:16 ../qml/forms/AddTaskForm.qml:157
 #: ../qml/forms/AddTimeEntryForm.qml:16 ../qml/forms/AddTimeEntryForm.qml:154
-#: ../qml/forms/NewProjectForm.qml:16 ../qml/forms/NewProjectForm.qml:159
+#: ../qml/forms/NewProjectForm.qml:16 ../qml/forms/NewProjectForm.qml:151
 msgid "Cancel"
 msgstr ""
 
@@ -131,7 +131,7 @@ msgstr ""
 msgid "Estimated Hours"
 msgstr ""
 
-#: ../qml/forms/AddTaskForm.qml:108 ../qml/forms/NewProjectForm.qml:115
+#: ../qml/forms/AddTaskForm.qml:108 ../qml/forms/NewProjectForm.qml:113
 msgid "Description"
 msgstr ""
 
@@ -183,39 +183,39 @@ msgstr ""
 msgid "New Project"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:39
+#: ../qml/forms/NewProjectForm.qml:49
 msgid "Project Name"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:45
+#: ../qml/forms/NewProjectForm.qml:54
 msgid "Enter project name"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:50
+#: ../qml/forms/NewProjectForm.qml:58
 msgid "Client"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:56
+#: ../qml/forms/NewProjectForm.qml:63
 msgid "Enter client name"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:61
+#: ../qml/forms/NewProjectForm.qml:67
 msgid "Deadline"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:67 ../qml/forms/NewProjectForm.qml:147
+#: ../qml/forms/NewProjectForm.qml:72 ../qml/forms/NewProjectForm.qml:140
 msgid "Select deadline"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:76
+#: ../qml/forms/NewProjectForm.qml:80
 msgid "Budget"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:93
+#: ../qml/forms/NewProjectForm.qml:94
 msgid "Fixed"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:93
+#: ../qml/forms/NewProjectForm.qml:94
 msgid "Hourly"
 msgstr ""
 
@@ -223,35 +223,35 @@ msgstr ""
 msgid "Status"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:106
+#: ../qml/forms/NewProjectForm.qml:105
 msgid "Not Started"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:107
+#: ../qml/forms/NewProjectForm.qml:106
 msgid "In Progress"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:108
+#: ../qml/forms/NewProjectForm.qml:107
 msgid "On Hold"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:109
+#: ../qml/forms/NewProjectForm.qml:108
 msgid "Completed"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:122
+#: ../qml/forms/NewProjectForm.qml:119
 msgid "Enter project description"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:128
+#: ../qml/forms/NewProjectForm.qml:124
 msgid "Team Members"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:134
+#: ../qml/forms/NewProjectForm.qml:129
 msgid "Add team members (comma separated)"
 msgstr ""
 
-#: ../qml/forms/NewProjectForm.qml:139
+#: ../qml/forms/NewProjectForm.qml:133
 msgid "Create Project"
 msgstr ""
 

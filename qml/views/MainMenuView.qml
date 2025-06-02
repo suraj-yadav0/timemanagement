@@ -133,7 +133,7 @@ Page {
         
         Label {
             anchors.centerIn: parent
-            text: "Time Management v1.0"
+            text: "Time Management v0.1.0"
             fontSize: "small"
             color:  theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "#1c355e"
         }
