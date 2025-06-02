@@ -26,7 +26,7 @@ Page {
     ScrollView {
         anchors {
             fill: parent
-            top: newProjectForm.header.bottom
+            top: header.bottom
             margins: units.gu(3)
         }
 
@@ -34,7 +34,7 @@ Page {
             contentWidth:width
             contentHeight: columnContent.height
             anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: parent.top
+            anchors.top: header.bottom
             anchors.bottom: parent.bottom
             clip: true
 
