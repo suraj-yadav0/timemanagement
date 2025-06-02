@@ -1,8 +1,6 @@
 import QtQuick 2.9
 import Lomiri.Components 1.3
-import"../components"
-import "../models"
-import "../forms"
+
 
 
 Page {
@@ -119,7 +117,7 @@ Page {
         Rectangle {
             anchors.fill: parent
             color: "lightgray"
-            opacity: 0.1// Make it invisible but still interactive
+            opacity: 0.0// Make it invisible but still interactive
         }
     }
     
@@ -135,7 +133,7 @@ Page {
         
         Label {
             anchors.centerIn: parent
-            text: "Time Management v1.0"
+            text: "Time Management v0.1.0"
             fontSize: "small"
             color:  theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "#1c355e"
         }

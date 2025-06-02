@@ -8,7 +8,7 @@ import "components"
 
 MainView {
     id: root
-    applicationName: "timemanagement.app"
+    applicationName: "timemanagement.surajyadav"
     automaticOrientation: true
     
     width: units.gu(60)
@@ -107,6 +107,7 @@ MainView {
                         break
                     case "Settings":
                         pageLayout.addPageToNextColumn(mainPage, settingsPage)
+                        break
                     case "New Time Entry":
                         pageLayout.addPageToNextColumn(mainPage, addTimeEntryPage)
                         break
