@@ -7,7 +7,7 @@ Page {
         title: i18n.tr("New Project")
            StyleHints {
             backgroundColor:  theme.name === "Ubuntu.Components.Themes.SuruDark" ? "black" : "#1c355e"
-		foregroundColor: theme.name === "Ubuntu.Components.Themes.SuruDark" ? "#fac34d" : "white"
+		foregroundColor: theme.name === "Ubuntu.Components.TheThemes.SuruDark" ? "#fac34d" : "white"
 	}
         trailingActionBar {
             actions: [
@@ -36,7 +36,8 @@ Page {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: header.bottom
             anchors.bottom: parent.bottom
-            clip: true
+           // clip: true
+        
 
             Column {
                 id: columnContent
@@ -140,8 +141,8 @@ Page {
                             client: clientField.text,
                             deadline: deadlineButton.text !== i18n.tr("Select deadline") ? deadlineButton.text : "",
                             budget: budgetField.text,
-                            budgetType: budgetTypeField.currentText,
-                            status: statusField.currentText,
+                            budgetType: budgetTypeField.selectedValue,
+                            status: statusField.selectedValue,
                             description: descriptionField.text,
                             teamMembers: teamMembersField.text
                         })
