@@ -111,7 +111,7 @@ Page {
             if (startY - endY > units.gu(3)) {
                 // threshold for swipe
                 
-            mainMenuView.newTimeEntryRequested()
+            mainMenuView.itemSelected("New Time Entry");
             }
         }
         z: 999 // Ensure it's above other content
