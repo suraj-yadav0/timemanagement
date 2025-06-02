@@ -31,7 +31,7 @@ Page {
         }
 
         Flickable {
-            contentWidth: Math.min(parent.width, units.gu(60))
+            contentWidth:width
             contentHeight: columnContent.height
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
@@ -42,7 +42,8 @@ Page {
                 id: columnContent
                 width: Math.min(parent.width, units.gu(60))
                 spacing: units.gu(2)
-                anchors.horizontalCenter: parent.horizontalCenter
+              //  anchors.horizontalCenter: parent.horizontalCenter
+              anchors.fill: parent
 
                 // Project name
                 Label {
