@@ -2,6 +2,7 @@ import QtQuick 2.9
 import Lomiri.Components 1.3
 import"../components"
 import "../models"
+import "../forms"
 
 
 Page {
@@ -29,6 +30,7 @@ Page {
        
     property var model
     signal itemSelected(string itemName)
+        signal newTimeEntryRequested()
     
     ListView {
         id: menuListView
@@ -88,7 +90,7 @@ Page {
         z: 1000
     }
 
-    // Add Projects swipe-up gesture area at the bottom
+
     MultiPointTouchArea {
         id: swipeUpArea
         anchors.left: parent.left
@@ -109,7 +111,7 @@ Page {
             if (startY - endY > units.gu(3)) {
                 // threshold for swipe
                 
-               taskView.newTaskRequested()
+            mainMenuView.newTimeEntryRequested()
             }
         }
         z: 999 // Ensure it's above other content
@@ -117,7 +119,7 @@ Page {
         Rectangle {
             anchors.fill: parent
             color: "lightgray"
-            opacity: 0.0// Make it invisible but still interactive
+            opacity: 0.1// Make it invisible but still interactive
         }
     }
     
