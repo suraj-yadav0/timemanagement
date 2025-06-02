@@ -1,6 +1,7 @@
 import QtQuick 2.9
 import Lomiri.Components 1.3
 import"../components"
+import "../models"
 
 
 Page {
@@ -108,7 +109,7 @@ Page {
             if (startY - endY > units.gu(3)) {
                 // threshold for swipe
                 
-                projectsView.newProjectRequested();
+               taskView.newTaskRequested()
             }
         }
         z: 999 // Ensure it's above other content
