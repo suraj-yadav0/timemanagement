@@ -8,7 +8,7 @@ import "components"
 
 MainView {
     id: root
-    applicationName: "timemanagement.app"
+    applicationName: "timemanagement.surajyadav"
     automaticOrientation: true
     
     width: units.gu(60)
